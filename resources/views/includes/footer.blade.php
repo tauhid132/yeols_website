@@ -1,63 +1,67 @@
-<footer class="main-footer">
-    <div class="upper-box">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-4 col-md-7">
-                    <div class="widget">
-                        <a  href="{{ route('view.home.page') }}"><img class="mb-3" src="{{ asset('logo-footer.png') }}" alt=""></a>
-                        <div class="text">Rowad Al Ghad is a Pest Control Company is Dubai, UAE. Provding service like insect control, Sanitizing & Disinfecting, Building Cleaning etc.</div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <div class="widget links-widget">
-                        <h4 class="widget_title">Pages</h4>
-                        <div class="widget-content">
-                            <ul class="list">
-                                <li><a href="{{ route('view.home.page') }}">Home</a></li>
-                                <li><a href="{{ route('view.about.us') }}">About Us</a></li>
-                                <li><a href="{{ route('view.blogs') }}">Blogs & Articles </a></li>
-                                <li><a href="{{ route('view.contact.us') }}">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6">
-                    <div class="widget links-widget">
-                        <h4 class="widget_title">Services</h4>
-                        <div class="widget-content">
-                            <ul class="list">
-                                <li><a href="{{ route('view.sanitizing') }}">Sanitizing & Disinfecting Service </a></li>
-                                <li><a href="{{ route('view.rope.access.cleaning') }}">Rope Access Cleaning </a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 col-md-6">
-                    <div class="widget contact-widget">
-                        <h4 class="widget_title">Contact</h4>
-                        <ul>
-                            <li>Dubai, United Arab Emirates</li>
-                            <li><a href="mailto:sales@pestcontrol-dubai.ae">sales@pestcontrol-dubai.ae</a></li>
-                            <li><a href="tel:0569193222">0569193222</a></li>
-                        </ul>
-                        <ul class="social-icon d-flex">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+<div id="footer">
+  <div class="style-subpage  style-blog">
+    <div class="footer-block bg-white pt-60">
+      <div class="container">
+        <div class="row row-gap-32">
+          <div class="col-xl-3 col-md-6">
+            <div class="footer-company-infor d-flex flex-column gap-20">
+              <a class="logo" href="index.html"> 
+                <img src="{{ asset('logo.png') }}" style="height: 50px"> 
+              </a>
+              <div class="caption1">Welcome to Bytewave! We provide diverse IT solutions with a team of experts. From IT management to cloud solutions, we have you covered. </div>
+              <div class="caption1">Mon - Fri: 9:00 - 19:00 <br>Closed on Weekends</div>
             </div>
-        </div> 
-    </div>               
-</footer>
-<div class="footer-bottom">
-    <div class="auto-container">
-        <div class="content">
-            <div class="copyright"><a href="{{ route('view.home.page') }}">Rowad Al Ghad</a> © {{ date('Y') }} All Right Reserved</div>
-            <div class="copyright">Developed by <a href="https://nextwaveit.tech">Next Wave IT</a></div>
-        </div>            
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="footer-navigate">
+              <div class="footer-nav-item">
+                <div class="item-heading text-button">Company</div>
+                <ul class="list-nav mt-12">
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="about-us.html">About us</a></li>
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="our-team.html">Our Team</a></li>
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="about-us.html">Careers</a></li>
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="blog-grid.html">Blog</a></li>
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="case-studies-one.html">Case Studies</a></li>
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="contact-us.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-nav-item">
+                <div class="item-heading text-button">Solutions</div>
+                <ul class="list-nav mt-12">
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="service-detail.html">Managed IT Services</a></li>
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="service-detail.html">IT Consulting</a></li>
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="service-detail.html">Cloud Computing</a></li>
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="service-detail.html">Cybersecurity Solutions</a></li>
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="service-detail.html">Data Analytics</a></li>
+                  <li class="mt-8"><a class="caption1 text-line hover-underline" href="service-detail.html">Software Development</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-md-6 col-12">
+            <div class="company-contact"> 
+              <div class="heading text-button">Newsletter</div>
+              <div class="send-block mt-20 flex-item-center"><i class="ph ph-envelope"></i>
+                <input class="caption1" type="text" placeholder="Your email address"/>
+                <button><i class="ph ph-paper-plane-tilt"></i></button>
+              </div>
+              <div class="list-social flex-item-center gap-10 mt-28"><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.facebook.com/yeolsIT" target="_blank"><i class="icon-facebook"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.linkedin.com/company/103704744/admin/feed/posts/" target="_blank"><i class="icon-linkedin"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://x.com/yeolsITlimited" target="_blank"><i class="icon-twitter"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.youtube.com/" target="_blank"><i class="icon-youtube"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.instagram.com/" target="_blank"><i class="icon-instagram fs-14"></i></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-line mt-60"></div>
+      <div class="bg-white">
+        <div class="container bg-white">
+          <div class="footer-bottom flex-between pt-8 pb-8">
+            <div class="left-block flex-item-center">
+              <div class="copy-right text-black caption1">©{{ date('Y') }} Yeols Limited | All Rights Reserved.</div>
+            </div>
+            <div class="nav-link flex-item-center gap-10">
+              <a class="text-black caption1 hover-underline" href="#!">Terms Of Services</a><span class="text-black caption1">|</span><a class="text-black caption1 hover-underline" href="#!">Privacy Policy</a><span class="text-black-variant1 caption1">|</span><a class="text-black caption1 hover-underline" href="#!">Cookie Policy</a></div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
-

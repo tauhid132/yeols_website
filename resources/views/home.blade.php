@@ -1,320 +1,428 @@
 @extends('master')
-@section('page-title', "Pest Control Services Company in Dubai, UAE | Pest Control Dubai")
+@section('page-title', "Yeols Limited")
 @section('main-body')
-<div class="page-wrapper">
-    @include('includes.header')
-    <div id="search-popup" class="search-popup">
-        <div class="close-search theme-btn"><span class="flaticon-remove"></span></div>
-        <div class="popup-inner">
-            <div class="overlay-layer"></div>
-            <div class="search-form">
-                <form method="get" action="{{ route('view.home.page') }}">
-                    <div class="form-group">
-                        <fieldset>
-                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
-                            <input type="submit" value="Search Now!" class="theme-btn">
-                        </fieldset>
+<div id="content">
+    <div class="slider-block style-one mt-60">
+        <div class="container"> 
+            <div class="row row-gap-32">
+                <div class="col-xl-4 col-12">
+                    <div class="text">
+                        <div class="heading2 pr-55">Empowering Companies with Tailored IT Solutions</div>
+                        <div class="body2 mt-16">We provide custom software solutions for any industry. Creating high - value software and technology for your business. </div>
                     </div>
-                </form>
+                    <div class="block-button mt-40 d-flex gap-16 flex-wrap"><a class="button hover-button bg-black text-white border-none" href="about-us.html"> <span>Explore More</span></a><a class="button hover-button bg-grey border-none" href="contact-us.html"> <span>Contact</span></a></div>
+                </div>
+                <div class="col-xl-8 col-12">
+                    <div class="bg-img w-100"><video style="height: 493px; width: 850px" controls>
+                        <source src="{{ asset('intro.mp4') }}" type="video/mp4">
+                            
+                        </video></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-    <section class="banner-section style-three">
-        <div class="swiper-container banner-slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image: url(assets/images/main-slider/image-4.png);">     
-                    <div class="content-outer">
-                        <div class="content-box justify-content-center">
-                            <div class="inner text-center">
-                                <h1>Protecting Your Home From <br> Unwanted Pests.</h1>
-                                <div class="text">Experience the difference and contact us now.</div>
-                                <div class="link-box">
-                                    <a href="https://wa.me/971569193222" class="theme-btn btn-style-one"><span>Schedule Services</span></a>
+        <div class="section-about mt-60"> 
+            <div class="container"> 
+                <div class="content">
+                    <div class="row row-gap-12 pb-40">
+                        <div class="col-12 col-xl-5 col-md-6">
+                            <div class="text-label text-white bg-blue">About Us</div>
+                            <div class="heading4 text-white mt-16">We ensure quality works and customer's satisfaction</div>
+                        </div>
+                        <div class="col-12 col-md-6"> 
+                            <div class="desc text-white">Your IT Services Partner! We offer customized IT solutions, from managed services to cloud computing and cybersecurity. Empower your business with our expertise for growth and efficiency. </div><a class="text-button-small text-white border-underline-white-2px mt-16" href="about-us.html">Join us today!</a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="counter row row-gap-10 pt-40">
+                        <div class="col-6 col-md-3"> 
+                            <div class="counter-item"> 
+                                <div class="flex-item-center">
+                                    <div class="count-number heading4 text-white">100</div><span class="heading3 text-white">+</span>
                                 </div>
+                                <div class="body1 mt-4 text-white">Happy Customers</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3"> 
+                            <div class="counter-item"> 
+                                <div class="flex-item-center">
+                                    <div class="count-number heading4 text-white">150</div><span class="heading3 text-white">+</span>
+                                </div>
+                                <div class="body1 mt-4 text-white">Projects Completed</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3"> 
+                            <div class="counter-item"> 
+                                <div class="flex-item-center">
+                                    <div class="count-number heading4 text-white">15</div><span class="heading3 text-white">+</span>
+                                </div>
+                                <div class="body1 mt-4 text-white">Working Countries</div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3"> 
+                            <div class="counter-item"> 
+                                <div class="flex-item-center">
+                                    <div class="count-number heading4 text-white">5</div><span class="heading3 text-white">+</span>
+                                </div>
+                                <div class="body1 mt-4 text-white">Years Experience</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="swiper-slide" style="background-image: url(assets/images/main-slider/image-5.png);">
-                    <div class="content-outer">
-                        <div class="content-box justify-content-center">
-                            <div class="inner text-center">
-                                <h1>Keep Your Home  Clean</h1>
-                                <div class="text">Experience the difference and contact us now.</div>
-                                <div class="link-box">
-                                    <a href="https://wa.me/971569193222" class="theme-btn btn-style-one"><span>Book Service Now</span></a>
-                                </div>
-                            </div>
+            </div>
+        </div>
+        <div class="section-benefit mt-80">
+            <div class="container"> 
+                <div class="row row-gap-40">
+                    <div class="col-12 col-lg-3 col-sm-6">
+                        <div class="benefit-item ">
+                            <div class="block-icon"> <i class="ph ph-medal fs-42"></i></div>
+                            <div class="heading6 mt-8">Expertise</div>
+                            <div class="text-on-surface-variant1 mt-8">Access to specialized knowledge and technology expertise for effective IT solutions.</div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="swiper-slide" style="background-image: url(assets/images/main-slider/image-6.png);">
-                    <div class="content-outer">
-                        <div class="content-box justify-content-center">
-                            <div class="inner text-center">
-                                <h1>Provide Service to fix your<br> Pest Problems</h1>
-                                <div class="text">Experience the difference and contact us now.</div>
-                                <div class="link-box">
-                                    <a href="https://wa.me/971569193222" class="theme-btn btn-style-one"><span>Book Service Now</span></a>
-                                </div>
-                            </div>
+                    <div class="col-12 col-lg-3 col-sm-6">
+                        <div class="benefit-item ">
+                            <div class="block-icon"> <i class="ph ph-money fs-42"></i></div>
+                            <div class="heading6 mt-8">Cost Savings</div>
+                            <div class="text-on-surface-variant1 mt-8">Avoiding expenses associated with maintaining an in-house IT department.</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-sm-6">
+                        <div class="benefit-item ">
+                            <div class="block-icon"> <i class="ph ph-fingerprint fs-42"></i></div>
+                            <div class="heading6 mt-8">Enhanced Security</div>
+                            <div class="text-on-surface-variant1 mt-8">Robust measures to protect against cyber threats and ensure data security.</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-sm-6">
+                        <div class="benefit-item ">
+                            <div class="block-icon"> <i class="ph ph-chart-line-up fs-42"></i></div>
+                            <div class="heading6 mt-8">Increased Efficiency</div>
+                            <div class="text-on-surface-variant1 mt-8">Streamlined operations, automation, and proactive monitoring for improved productivity.</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="banner-slider-nav">
-            <div class="banner-slider-control banner-slider-button-prev"><span><i class="flaticon-left-arrow"></i></span></div>
-            <div class="banner-slider-control banner-slider-button-next"><span><i class="flaticon-left-arrow"></i></span></div>
-        </div>
-    </section>
-
-    <section class="contact-info-section">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-4 info-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="icon"><span class="fa-brands fa-whatsapp"></span></div>
-                        <div class="content text-center">
-                            <h5>Call or Whats App</h5>
-                            <h4><a href="https://wa.me/971569193222">0569193222</a></h4>
+        <div class="section-solution bg-linear mt-80 pt-80 pb-80"> 
+            <div class="container text-center">
+                <div class="text-label pt-4 pb-4 pl-12 pr-12 bg-green bora-2 display-inline-block">What we do</div>
+                <div class="heading3 text-center mt-12">Our Services</div>
+                <div class="row row-gap-40 mt-40 sub-nav-solution">
+                    <div class="col-12 col-xl-4 col-sm-6">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution1"><a class="main-item flex-column-item-center">
+                            <img src="{{ asset('web-development.png') }}" style="height: 70px">
+                            <div class="service-name heading5 text-center mt-24">Web Development</div>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">We are an IT company specializing in web development solutions, delivering innovative and customized websites to meet your business needs. Our expert team ensures top-notch design, functionality, and user experience, driving your online presence and success.</div></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 info-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="icon"><span class="flaticon-placeholder"></span></div>
-                        <div class="content text-center">
-                            <h5>+971 4 256 2282</h5>
-                            <h4><a href="contact.html"> Across Dubai – UAE</a></h4>
+                    <div class="col-12 col-xl-4 col-sm-6">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution2"><a class="main-item flex-column-item-center">
+                            <img src="{{ asset('app-development.png') }}" style="height: 70px">
+                            <div class="service-name heading5 text-center mt-24">App Development</div>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">We turn your mobile app vision into reality. Our IT experts craft user-friendly, feature-rich apps for iOS and Android, helping your business flourish in today's mobile world.</div></a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 info-block">
-                    <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="icon"><span class="flaticon-placeholder"></span></div>
-                        <div class="content text-center">
-                            <h5>+971 6 553 8723</h5>
-                            <h4><a href="contact.html">Sharjah – UAE</a></h4>
+                    <div class="col-12 col-xl-4 col-sm-6">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution3"><a class="main-item flex-column-item-center">
+                            <img src="{{ asset('software-development.png') }}" style="height: 70px">
+                            <div class="service-name heading5 text-center mt-24">Software Development</div>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">Your IT needs, solved. We craft custom software solutions for businesses, from web and mobile apps to powerful back-end systems. We transform your ideas into reality, boosting efficiency and growth.</div></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4 col-sm-6">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution4"><a class="main-item flex-column-item-center">
+                            <img src="{{ asset('digital-marketing.png') }}" style="height: 70px">
+                            <div class="service-name heading5 text-center mt-24">Digital Marketing</div>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">Let us supercharge your IT brand online! We combine expert SEO strategies with digital marketing muscle to get your website seen by the right audience. Drive organic traffic and leads with our data-driven approach.</div></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4 col-sm-6">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution5"><a class="main-item flex-column-item-center">
+                            <img src="{{ asset('seo.png') }}" style="height: 70px">
+                            <div class="service-name heading5 text-center mt-24">SEO</div>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">We unlock your IT brand's online potential! Our SEO experts optimize your website for search engines, driving high-quality traffic and leads. Get found by the right customers and soar in search rankings.</div></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-4 col-sm-6">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution5"><a class="main-item flex-column-item-center">
+                            <img src="{{ asset('ui.png') }}" style="height: 70px">
+                            <div class="service-name heading5 text-center mt-24">UI / UX Design</div>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">We elevate your IT products! Our UI/UX design creates user-friendly interfaces and intuitive experiences. We craft beautiful, functional designs that drive engagement and success for your software.</div></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    
-    <section class="services-section style-three">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <div class="sub-title">Services</div>
-                <h2>Pest Control & Building Cleaning Services</h2>
-            </div>
-            <div class="wrapper-box">
-                <span class="shape-three"><img src="assets/images/shape/shape-6.png" alt=""></span>
-                <span class="shape-four"><img src="assets/images/shape/shape-7.png" alt=""></span>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                            <div class="icon"><span class="flaticon-cockroach"></span></div>
-                            <h4><a href="{{ route('view.cockroaches.pest.control') }}">Cockroach</a></h4>
-                            <div class="text">{!! strip_tags(\Illuminate\Support\Str::limit("Experience comprehensive cockroach pest control solutions with Rowad Al Ghad. Our dedicated team of experts is equipped with the knowledge and tools to effectively eradicate cockroach infestations from your home or business. Using a combination of thorough inspections, customized treatment plans, and integrated pest management techniques, we tackle cockroach problems at their source. Our safe and environmentally responsible approach prioritizes the well-being of your family, pets, and the ecosystem while delivering exceptional results. With a focus on professionalism, customer satisfaction, and affordability, we strive to exceed your expectations every step of the way. Trust Rowad Al Ghad to provide prompt, reliable, and effective cockroach pest control solutions tailored to your unique needs. Contact us today to schedule a consultation and reclaim your space from unwanted pests.", 80, $end='...')) !!}</div>
-                            <div class="link-btn"><a href="{{ route('view.cockroaches.pest.control') }}" class="theme-btn btn-style-one style-two"><span>Learn More</span></a></div>
-                        </div>
+        <div class="section-service mt-80"> 
+            <div class="container"> 
+                <div class="row gy-2 flex-between">
+                    <div class="col-xl-8 col-md-9 col-12">
+                        <div class="text-label text-blue pt-4 pb-4 pl-12 pr-12 bg-grey bora-2 display-inline-block">What we do</div>
+                        <div class="heading3 mt-12">Services that we are specialized in</div>
                     </div>
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box wow fadeInDown" data-wow-duration="1500ms">
-                            <div class="icon"><span class="flaticon-mosquito"></span></div>
-                            <h4><a href="{{ route('view.bed.bug.pest.control') }}">Bed Bug</a></h4>
-                            <div class="text">{!! strip_tags(\Illuminate\Support\Str::limit("Say goodbye to sleepless nights with expert bed bug control solutions from Rowad Al Ghad. Bed bugs are relentless pests that can invade homes and businesses, causing discomfort and frustration for occupants. Our team specializes in comprehensive bed bug control services, utilizing advanced techniques and eco-friendly products to eradicate bed bug infestations effectively. From thorough inspections to targeted treatments and ongoing prevention strategies, we're dedicated to ensuring your space remains bed bug-free. With our commitment to professionalism, integrity, and customer satisfaction, you can trust Rowad Al Ghad to deliver reliable and efficient bed bug control solutions tailored to your needs. Don't let bed bugs take over—contact us today to schedule a consultation and restore peace and comfort to your environment.", 100, $end='...')) !!}</div>
-                            <div class="link-btn"><a href="{{ route('view.bed.bug.pest.control') }}" class="theme-btn btn-style-one style-two"><span>Learn More</span></a></div>
-                        </div>
+                    <div class="col-lg-2 col-md-3 col-12 text-end"><a class="text-button border-underline-blue display-inline-block" href="service-detail.html">View All industries</a></div>
+                </div>
+                <div class="row mt-40 row-gap-12 sub-nav-solution">
+                    <div class="col-sm-6 col-12"> 
+                        <a class="service-item nav-item-main bg-surface pt-16 pb-16 pl-20 pr-20 flex-item-center bora-8 h-100" href="#" data-cate="Finance Consulting" data-item=""><i class="ph ph-bank fs-24"></i>
+                            <div class="service-name heading6 pl-12">Web Design & Development</div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box wow fadeInDown" data-wow-duration="1500ms">
-                            <div class="icon"><span class="flaticon-tarantula"></span></div>
-                            <h4><a href="{{ route('view.spiders.pest.control') }}">Spiders</a></h4>
-                            <div class="text">{!! strip_tags(\Illuminate\Support\Str::limit("Keep your home or business spider-free with expert pest control solutions from Rowad Al Ghad. Spiders may be beneficial predators, but when their populations grow out of control, they can become a nuisance and even a source of fear for many individuals. Our team understands the importance of maintaining a safe and comfortable environment, which is why we offer specialized spider pest control services tailored to your needs. Using advanced techniques and eco-friendly products, we target spider infestations at their source while minimizing harm to the environment and non-target species. From thorough inspections to targeted treatments and ongoing prevention strategies, we're committed to keeping your space free from unwanted eight-legged intruders. Trust Rowad Al Ghad to deliver reliable, effective, and professional spider pest control solutions. Contact us today to schedule a consultation and reclaim your space from arachnid invaders.", 100, $end='...')) !!}</div>
-                            <div class="link-btn"><a href="{{ route('view.spiders.pest.control') }}" class="theme-btn btn-style-one style-two"><span>Learn More</span></a></div>
-                        </div>
+                    <div class="col-sm-6 col-12"> 
+                        <a class="service-item nav-item-main bg-surface pt-16 pb-16 pl-20 pr-20 flex-item-center bora-8 h-100" href="#" data-cate="Finance Consulting" data-item=""><i class="ph ph-bank fs-24"></i>
+                            <div class="service-name heading6 pl-12">Wordpress Design & Plugin Development</div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                            <div class="icon"><span class="flaticon-termite"></span></div>
-                            <h4><a href="{{ route('view.termites.pest.control') }}">Termites</a></h4>
-                            <div class="text">{!! strip_tags(\Illuminate\Support\Str::limit("Protect your property from the destructive force of termites with Rowad Al Ghad. Termites pose a serious threat to homes and businesses, causing extensive damage that can compromise structural integrity and lead to costly repairs. Our team of termite experts specializes in comprehensive pest control solutions designed to detect, eliminate, and prevent termite infestations. Through thorough inspections, state-of-the-art treatments, and proactive prevention strategies, we safeguard your investment and provide peace of mind. With a focus on professionalism, reliability, and customer satisfaction, we deliver results you can trust. Don't let termites wreak havoc on your property. Contact Rowad Al Ghad today to schedule a consultation and fortify your defenses against these relentless pests", 100, $end='...')) !!}</div>
-                            <div class="link-btn"><a href="{{ route('view.termites.pest.control') }}" class="theme-btn btn-style-one style-two"><span>Learn More</span></a></div>
-                        </div>
+                    <div class="col-sm-6 col-12"> 
+                        <a class="service-item nav-item-main bg-surface pt-16 pb-16 pl-20 pr-20 flex-item-center bora-8 h-100" href="#" data-cate="Finance Consulting" data-item=""><i class="ph ph-bank fs-24"></i>
+                            <div class="service-name heading6 pl-12">E-Commerce Website Development</div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box wow fadeInDown" data-wow-duration="1500ms">
-                            <div class="icon"><span class="flaticon-squirrel"></span></div>
-                            <h4><a href="{{ route('view.rodents.pest.control') }}">Rodents</a></h4>
-                            <div class="text">{!! strip_tags(\Illuminate\Support\Str::limit("At Rowad Al Ghad, we understand the distress rodents can cause in both residential and commercial settings, which is why we offer comprehensive rodent pest control services. From mice to rats, these pests not only damage property and contaminate food but also pose health risks to occupants. Our expert technicians employ proven methods and state-of-the-art techniques to identify rodent entry points, eliminate existing infestations, and prevent future occurrences. We prioritize the safety of your family, pets, and the environment by using environmentally friendly products and humane trapping methods. With our personalized approach and unwavering commitment to customer satisfaction, you can trust Rowad Al Ghad to deliver efficient and effective rodent pest control solutions tailored to your needs. Say goodbye to unwanted furry intruders—contact us today to schedule a consultation and regain control of your space.", 100, $end='...')) !!}</div>
-                            <div class="link-btn"><a href="{{ route('view.rodents.pest.control') }}" class="theme-btn btn-style-one style-two"><span>Learn More</span></a></div>
-                        </div>
+                    <div class="col-sm-6 col-12"> 
+                        <a class="service-item nav-item-main bg-surface pt-16 pb-16 pl-20 pr-20 flex-item-center bora-8 h-100" href="#" data-cate="Finance Consulting" data-item=""><i class="ph ph-bank fs-24"></i>
+                            <div class="service-name heading6 pl-12">ERP & HRM Softwares</div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                            <div class="icon"><span class="flaticon-fly"></span></div>
-                            <h4><a href="{{ route('view.flies.pest.control') }}">Fly Control</a></h4>
-                            <div class="text">{!! strip_tags(\Illuminate\Support\Str::limit("Say farewell to pesky flies with expert pest control solutions from Rowad Al Ghad. Flies not only present a nuisance in homes and businesses but also pose potential health risks by spreading diseases and contaminating food. Our team specializes in comprehensive fly pest control services, utilizing advanced techniques and environmentally friendly products to target fly infestations at their source. From thorough inspections to strategic treatments and ongoing prevention strategies, we're committed to keeping your space fly-free. With our focus on professionalism, reliability, and customer satisfaction, you can trust Rowad Al Ghad to deliver effective and efficient fly pest control solutions tailored to your needs. Take back control of your environment—contact us today to schedule a consultation and experience a fly-free zone once again.", 110, $end='...')) !!}</div>
-                            <div class="link-btn"><a href="{{ route('view.flies.pest.control') }}" class="theme-btn btn-style-one style-two"><span>Learn More</span></a></div>
-                        </div>
+                    <div class="col-sm-6 col-12"> 
+                        <a class="service-item nav-item-main bg-surface pt-16 pb-16 pl-20 pr-20 flex-item-center bora-8 h-100" href="#" data-cate="Finance Consulting" data-item=""><i class="ph ph-bank fs-24"></i>
+                            <div class="service-name heading6 pl-12">Android App Development</div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box wow fadeInDown" data-wow-duration="1500ms">
-                            <div class="icon"><span class="flaticon-bee"></span></div>
-                            <h4><a href="{{ route('view.bees.pest.control') }}">Bee Control</a></h4>
-                            <div class="text">{!! strip_tags(\Illuminate\Support\Str::limit("At Rowad Al Ghad, we understand the importance of bees in our ecosystem, but we also recognize the need for safe and effective bee pest control solutions when they pose a threat to homes or businesses. Bees can become a nuisance when they establish hives in unwanted areas, presenting risks to occupants and property. Our team of experienced technicians specializes in humane bee removal and relocation services, prioritizing the safety of both people and pollinators. We utilize innovative techniques and eco-friendly products to carefully remove bee colonies while minimizing harm to the environment. With a commitment to professionalism, integrity, and customer satisfaction, you can trust Rowad Al Ghad to handle bee infestations with care and expertise. Contact us today to schedule a consultation and ensure the peaceful coexistence of humans and bees on your property.", 100, $end='...')) !!}</div>
-                            <div class="link-btn"><a href="{{ route('view.bees.pest.control') }}" class="theme-btn btn-style-one style-two"><span>Learn More</span></a></div>
-                        </div>
+                    <div class="col-sm-6 col-12"> 
+                        <a class="service-item nav-item-main bg-surface pt-16 pb-16 pl-20 pr-20 flex-item-center bora-8 h-100" href="#" data-cate="Finance Consulting" data-item=""><i class="ph ph-bank fs-24"></i>
+                            <div class="service-name heading6 pl-12">iOS App Development</div>
+                        </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                            <div class="icon"><span class="flaticon-ant"></span></div>
-                            <h4><a href="{{ route('view.ants.pest.control') }}">Ant Control</a></h4>
-                            <div class="text">{!! strip_tags(\Illuminate\Support\Str::limit("Keep ants at bay with professional pest control solutions from Rowad Al Ghad. Ants may be tiny, but they can cause significant disruptions in homes and businesses, contaminating food, damaging property, and even posing health risks. Our team specializes in comprehensive ant pest control services, utilizing advanced techniques and environmentally friendly products to effectively eliminate ant infestations. From thorough inspections to targeted treatments and proactive prevention strategies, we're committed to keeping your space ant-free. With our focus on professionalism, reliability, and customer satisfaction, you can trust Rowad Al Ghad to deliver efficient and effective ant pest control solutions tailored to your needs. Say goodbye to unwanted ant trails—contact us today to schedule a consultation and regain control of your environment.", 100, $end='...')) !!}</div>
-                            <div class="link-btn"><a href="{{ route('view.ants.pest.control') }}" class="theme-btn btn-style-one style-two"><span>Learn More</span></a></div>
-                        </div>
+                    <div class="col-sm-6 col-12"> 
+                        <a class="service-item nav-item-main bg-surface pt-16 pb-16 pl-20 pr-20 flex-item-center bora-8 h-100" href="#" data-cate="Finance Consulting" data-item=""><i class="ph ph-bank fs-24"></i>
+                            <div class="service-name heading6 pl-12">Digital Marketing & SEO</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-12"> 
+                        <a class="service-item nav-item-main bg-surface pt-16 pb-16 pl-20 pr-20 flex-item-center bora-8 h-100" href="#" data-cate="Finance Consulting" data-item=""><i class="ph ph-bank fs-24"></i>
+                            <div class="service-name heading6 pl-12">Outreach Linkbuilding</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-12"> 
+                        <a class="service-item nav-item-main bg-surface pt-16 pb-16 pl-20 pr-20 flex-item-center bora-8 h-100" href="#" data-cate="Finance Consulting" data-item=""><i class="ph ph-bank fs-24"></i>
+                            <div class="service-name heading6 pl-12">Social Media Management</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-12"> 
+                        <a class="service-item nav-item-main bg-surface pt-16 pb-16 pl-20 pr-20 flex-item-center bora-8 h-100" href="#" data-cate="Finance Consulting" data-item=""><i class="ph ph-bank fs-24"></i>
+                            <div class="service-name heading6 pl-12">UI / UX Design</div>
+                        </a>
                     </div>
                     
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <section class="services-section">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2>Why Us?</h2>
-            </div>
-            <div class="wrapper-box">
-                <span class="shape-one"><img src="assets/images/shape/shape-2.png" alt=""></span>
-                <span class="shape-two"><img src="assets/images/shape/shape-3.png" alt=""></span>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box">
-                            <div class="mb-4"><img src="{{ asset('sharjah.png') }}" style="height: 120px"></div>
-                            <h4>Government Approved</h4>
+                    
+                    {{-- <div class="section-banner">
+                        <div class="list">
+                            <div class="heading4 text-uppercase text-white">Experience Seamless IT Solutions</div><i class="icon-icon-logo fs-36 text-white"></i>
+                            <div class="heading4 text-uppercase text-white">Request IT Consultation</div><i class="icon-icon-logo fs-36 text-white"></i>
+                            <div class="heading4 text-uppercase text-white">Experience Seamless IT Solutions</div><i class="icon-icon-logo fs-36 text-white"></i>
+                            <div class="heading4 text-uppercase text-white">Request IT Consultation</div><i class="icon-icon-logo fs-36 text-white"></i>
+                        </div>
+                    </div> --}}
+                    {{-- <div class="section-brand bg-white pt-80 pb-80">
+                        <div class="container"> 
+                            <div class="heading5 text-center">Trusted by specialists all around the world</div>
+                            <div class="row mt-28 flex-center">
+                                <div class="col-11"> 
+                                    <div class="row"> 
+                                        <div class="col-xl-2-4 col-md-4 col-6"><img class="w-100" src="assets/images/brand/van.svg" alt="img"/></div>
+                                        <div class="col-xl-2-4 col-md-4 col-6"><img class="w-100" src="assets/images/brand/slack.svg" alt="img"/></div>
+                                        <div class="col-xl-2-4 col-md-4 col-6"><img class="w-100" src="assets/images/brand/pana.svg" alt="img"/></div>
+                                        <div class="col-xl-2-4 col-md-4 col-6"><img class="w-100" src="assets/images/brand/shang.svg" alt="img"/></div>
+                                        <div class="col-xl-2-4 col-md-4 col-6"><img class="w-100" src="assets/images/brand/spotify.svg" alt="img"/></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> --}}
+                    <div class="section-slide-shared section-testimonial style-two style-six pt-80 pb-80">
+                        <div class="container"> 
+                            <div class="cursor flex-center gap-12"><i class="ph ph-caret-left text-white"></i><i class="ph ph-caret-right text-white"></i></div>
+                            <div class="heading3 text-center">Testimonials</div>
+                            <div class="text-center mt-8">Discover exceptional experiences through testimonials from our satisfied customers.</div>
+                            <div class="list-comment mt-40">
+                                <div class="col">
+                                    <div class="item pl-32 pr-32 pt-40 pb-40 bg-white bora-16 flex-item-center gap-20 border-outline"><img class="bora-50 w-120 h-120 object-fit-cover display-block" src="{{ asset('images/testimonial/danial.png') }}" alt=""/>
+                                        <div class="content">
+                                            <div class="star flex-item-center gap-1"><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i></div>
+                                            <div class="body2 mt-12">Yeols transformed our outdated website into a modern, user-friendly platform. Their web development team was professional, attentive, and delivered beyond our expectations. The new design is sleek, and responsive, and has significantly boosted our online presence. We're happy with the results and highly recommend Yeols for exceptional web development services.</div>
+                                            <div class="infor mt-12">
+                                                <div class="text-title">Danial Sawan Lopez</div>
+                                                <div class="caption1 text-on-surface-variant1">Somos BlackLab</div>
+                                                <div class="double-slash"><i class="icon-slash-bora"></i><i class="icon-slash-bora"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="item pl-32 pr-32 pt-40 pb-40 bg-white bora-16 flex-item-center gap-20 border-outline"><img class="bora-50 w-120 h-120 object-fit-cover display-block" src="{{ asset('images/testimonial/oscar.png') }}" alt=""/>
+                                        <div class="content">
+                                            <div class="star flex-item-center gap-1"><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i></div>
+                                            <div class="body2 mt-12">They developed an outstanding mobile app for our business. Their team was highly skilled, communicative, and delivered on time. The app is intuitive, feature-rich, and has greatly improved our customer engagement. We couldn't be happier with the results and highly recommend Yeols for top-notch app development services.</div>
+                                            <div class="infor mt-12">
+                                                <div class="text-title">Oscar</div>
+                                                <div class="caption1 text-on-surface-variant1">CEO Digital Avitex</div>
+                                                <div class="double-slash"><i class="icon-slash-bora"></i><i class="icon-slash-bora"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="item pl-32 pr-32 pt-40 pb-40 bg-white bora-16 flex-item-center gap-20 border-outline"><img class="bora-50 w-120 h-120 object-fit-cover display-block" src="{{ asset('images/testimonial/dani.png') }}" alt=""/>
+                                        <div class="content">
+                                            <div class="star flex-item-center gap-1"><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i></div>
+                                            <div class="body2 mt-12">Yeols transformed our online presence with their exceptional SEO and digital marketing services. Our website's traffic and search rankings have significantly improved. Their team is knowledgeable, responsive, and truly understands our business needs. We highly recommend Yeols for anyone seeking impactful digital marketing solutions and outstanding SEO expertise.</div>
+                                            <div class="infor mt-12">
+                                                <div class="text-title">Dani</div>
+                                                <div class="caption1 text-on-surface-variant1">CEO Digital Avitex</div>
+                                                <div class="double-slash"><i class="icon-slash-bora"></i><i class="icon-slash-bora"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="item pl-32 pr-32 pt-40 pb-40 bg-white bora-16 flex-item-center gap-20 border-outline"><img class="bora-50 w-120 h-120 object-fit-cover display-block" src="{{ asset('images/testimonial/alex.png') }}" alt=""/>
+                                        <div class="content">
+                                            <div class="star flex-item-center gap-1"><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i></div>
+                                            <div class="body2 mt-12">Mr. Khan delivered an exceptional UI/UX design for our platform. Their team was creative, attentive, and focused on user experience. The intuitive and visually appealing design has greatly enhanced user engagement and satisfaction. We're extremely pleased with their work and highly recommend Yeols for outstanding UI/UX design services.</div>
+                                            <div class="infor mt-12">
+                                                <div class="text-title">Christina Smith</div>
+                                                <div class="caption1 text-on-surface-variant1">CEO Digital Avitex</div>
+                                                <div class="double-slash"><i class="icon-slash-bora"></i><i class="icon-slash-bora"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box">
-                            <div class="mb-4"><img src="{{ asset('dubai.png') }}" style="height: 120px"></div>
-                            <h4>Government Approved</h4>
+                    <div class="section-case-studies section-news pt-80 pb-80"> 
+                        <div class="container">
+                            
+                            <div class="heading text-center">
+                                <div class="text-label pt-4 pb-4 pl-12 pr-12 bg-green bora-2 display-inline-block">Our Blog</div>
+                                <div class="heading3 text-center mt-8">Recent Blogs</div>
+                            </div>
+                            <div class="list-blog-page pt-80 pb-80">
+                                <div class="container">
+                                    <div class="row row-gap-40">
+                                        @foreach ($blogs as $blog)
+                                        <div class="col-lg-4 col-sm-6 item">
+                                            <div class="blog-item blog-item-filter hover-box-shadow "><a class="main-item" href="{{ route('view.single.blog', $blog->slug) }}">
+                                                <div class="bg-img w-100 overflow-hidden"><img class="w-100 h-100 display-block" src="{{ asset('images/blog_images') }}/{{ $blog->cover_image }}"/></div>
+                                                <div class="infor mt-28">
+                                                    <div class="category text-button-small text-blue pt-4 pb-4 pl-12 pr-12 bg-grey bora-8 display-inline-block">Healthcare</div>
+                                                    <div class="title heading5 mt-12">{{ $blog->title }}</div>
+                                                    <div class="desc text-on-surface-variant1 mt-12">{!! strip_tags(\Illuminate\Support\Str::limit($blog->body, 150, $end='...')) !!}</div>
+                                                    <div class="date text-label text-on-surface-variant1 mt-16">{{ $blog->created_at->format('d F, Y') }}</div>
+                                                </div></a>
+                                            </div>
+                                        </div>
+                                        @endforeach
+                                        
+                                        
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box wow fadeInDown" data-wow-duration="1500ms">
-                            <div class="mb-4"><img src="{{ asset('safe-health.png') }}" style="height: 150px"></div>
-                            <h4>Health Safety</h4>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 service-block-one">
-                        <div class="inner-box wow fadeInUp" data-wow-duration="1500ms">
-                            <div class="mb-4"><img src="{{ asset('warranty.png') }}" style="height: 150px"></div>
-                            <h4>Service Warranty</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="testimonials-section-two">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <div class="sub-title">Testimonials</div>
-                <h2>Customer Reviews</h2>
-            </div>
-            <div class="theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 40, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 1000, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "2" } , "992":{ "items" : "2" }, "1200":{ "items" : "3" }}}'>
-                @foreach ($reviews as $review)
-                <div class="testimonial-block-two">
-                    <div class="inner-box">
-                        <div class="rating">
-                           @for ($i=0; $i<$review->rating; $i++)
-                           <span class="fas fa-star"></span>
-                           @endfor
-                        </div>                                  
-                        <div class="text">{{ $review->review }}</div>
-                        <div class="author-info">
-                            <h4>{{ $review->name }}</h4>
-                            <div class="designation">{{ $review->location }}</div>
-                        </div>
-                    </div>
-                </div> 
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-section style-two">
-        <div class="shape">
-            <svg 
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="1920px" height="500px">
-            <path fill-rule="evenodd"  fill="rgb(19, 29, 52)"
-            d="M0.000,-0.000 L1920.000,-0.000 L1870.000,399.999 C1866.036,427.614 1847.878,448.943 1820.000,450.000 L0.000,500.000 L0.000,-0.000 Z"/>
-            </svg>
-        </div>
-        <span class="shape-two"><img src="assets/images/shape/shape-4.png" alt=""></span>
-        <span class="shape-three"><img src="assets/images/shape/shape-5.png" alt=""></span>
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-center wow fadeInUp" data-wow-duration="1500ms">
-                        <div class="image-block">
-                            <div class="image"><img src="assets/images/resource/image-1.jpg" alt=""></div>
-                            <div class="offer">
-                               <img src="{{ asset('guarantee.png') }}" style="height: 150px">
+                    <div class="section-contact bg-linear-grey pt-60 pb-20">
+                        <div class="container"> 
+                            <div class="row flex-between row-gap-40">
+                                <div class="col-12 col-xl-7 text-white">
+                                    <div class="text-label text-white pt-4 pb-4 pl-12 pr-12 bg-blue bora-2 display-inline-block">Contact us</div>
+                                    <div class="heading3 text-white mt-12">Book a free consultation for your company</div>
+                                    <p class="desc mt-24">Unlock the full potential of your business with our free consultation. Our expert team will assess your IT needs, recommend tailored solutions, and chart a path to success. Book your consultation now and take the first step towards empowering your business with cutting-edge technology.</p>
+                                    <div class="list-features gy-2 mt-16">
+                                        <div class="item flex-item-center"> <i class="ph ph-check fs-20"></i>
+                                            <div class="body2 pl-12">Confirmation of appointment details</div>
+                                        </div>
+                                        <div class="item flex-item-center mt-8"><i class="ph ph-check fs-20"></i>
+                                            <div class="body2 pl-12">Research and preparation by the IT services company</div>
+                                        </div>
+                                        <div class="item flex-item-center mt-8"><i class="ph ph-check fs-20"></i>
+                                            <div class="body2 pl-12">Consultation to discuss technology solutions</div>
+                                        </div>
+                                        <div class="item flex-item-center mt-8"><i class="ph ph-check fs-20"></i>
+                                            <div class="body2 pl-12">Needs assessment for tailored solutions</div>
+                                        </div>
+                                        <div class="item flex-item-center mt-8"><i class="ph ph-check fs-20"></i>
+                                            <div class="body2 pl-12">Presentation of proposed solutions</div>
+                                        </div>
+                                        <div class="item flex-item-center mt-8"><i class="ph ph-check fs-20"></i>
+                                            <div class="body2 pl-12">Project execution and ongoing support</div>
+                                        </div>
+                                        <div class="item flex-item-center mt-8"><i class="ph ph-check fs-20"></i>
+                                            <div class="body2 pl-12">Follow-up to evaluate effectiveness and satisfaction</div>
+                                        </div>
+                                    </div>
+                                    <div class="line mt-24"></div>
+                                    <div class="flex-item-center mt-24"><i class="ph ph-envelope fs-20"></i>
+                                        <div class="body2 pl-12">hi.avitex@gmail.com</div>
+                                    </div>
+                                    <div class="flex-item-center mt-8"><i class="ph ph-phone-call fs-20"></i>
+                                        <div class="body2 pl-12">1-333-345-6868</div>
+                                    </div>
+                                    <div class="flex-item-center mt-8"><i class="ph ph-map-pin fs-20"></i>
+                                        <div class="body2 pl-12">101 E 129th St, East Chicago, IN 46312, US</div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-4">
+                                    <div class="form-block bora-16 bg-white pt-24 pb-24 pl-28 pr-28 d-flex flex-column gap-20">
+                                        <div class="heading5">Schedule a free consultation</div>
+                                        <div class="row gy-2">
+                                            <div class="col-12">
+                                                <label class="caption1 text-on-surface-variant1 pb-8" for="phone">Phone</label>
+                                                <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="number" id="phone" placeholder=""/>
+                                            </div>
+                                            <div class="col-12 col-sm-6"> 
+                                                <label class="caption1 text-on-surface-variant1 pb-8" for="firstName">First Name</label>
+                                                <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="text" id="firstName" placeholder=""/>
+                                            </div>
+                                            <div class="col-12 col-sm-6"> 
+                                                <label class="caption1 text-on-surface-variant1 pb-8" for="lastName">Last Name</label>
+                                                <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="text" id="lastName" placeholder=""/>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="caption1 text-on-surface-variant1 pb-8" for="phone">Phone</label>
+                                                <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="number" id="phone" placeholder=""/>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="caption1 text-on-surface-variant1 pb-8" for="companyEmail">Company Email</label>
+                                                <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="email" id="companyEmail" placeholder=""/>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="caption1 text-on-surface-variant1 pb-8" for="company">Company/ Organization</label>
+                                                <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="text" id="company" placeholder=""/>
+                                            </div>
+                                            <div class="col-12"> 
+                                                <label class="caption1 text-on-surface-variant1 pb-8" for="cate">How can we help you?</label>
+                                                <select class="w-100 bg-white pl-16 pr-24 pt-8 pb-8 bora-4 border-outline" name="form" id="cate">
+                                                    <option value="Financial Planning">Financial Planning</option>
+                                                    <option value="Business Planning">Business Planning</option>
+                                                    <option value="Development Planning">Development Planning</option>
+                                                </select><i class="ph ph-caret-down"></i>
+                                            </div>
+                                            <div class="col-12"> 
+                                                <label class="caption1 text-on-surface-variant1 pb-8" for="message">Your message</label>
+                                                <textarea class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline display-block" name="message" rows="3" id="message" placeholder=""></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="block-button">
+                                            <button class="button-blue bg-black text-white button-blue-hover w-100">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="content wow fadeInUp" data-wow-duration="1500ms">
-                        <h2>Book an <br> Appointment Today!</h2>
-                        <div class="text">We offer comprehensive pest control solutions for residential and commercial properties. Our team of highly trained and licensed technicians uses the latest methods and environmentally friendly products to eliminate a wide range of pests</div>
-                        <div class="link-btn"><a href="https://wa.me/971569193222" class="theme-btn btn-style-one"><span> Book Service Now!</span></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-
-    
-    {{-- <section class="blog-section">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2>News & Article</h2>
-            </div>
-            <div class="row">
-
-                @foreach ($blogs as $blog)
-                <div class="col-lg-4 news-block-one">
-                    <div class="inner-box">
-                        <div class="image"><a href="{{ route('view.single.blog', $blog->slug) }}"><img style="height: 300px; width:100%" src="{{ asset('assets/images/blog_images') }}/{{ $blog->cover_image }}" alt=""></a></div>
-                        <h4><a href="{{ route('view.single.blog', $blog->slug) }}">{{ $blog->title }}</a></h4>
-                        <div class="post-meta">By <a href="#"><span>  {{ $blog->author->name }}</span></a> - <a href="#">{{ $blog->created_at->format('d F, Y') }}</a></div>
-                        <div class="text">{!! strip_tags(\Illuminate\Support\Str::limit($blog->body, 150, $end='...')) !!}</div>
-                        <div class="link-btn"><a href="{{ route('view.single.blog', $blog->slug) }}" class="theme-btn btn-style-one style-two"><span> Learn More</span></a></div>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-        </div>
-    </section> --}}
-
-    @include('includes.subscribe')
-
-    @include('includes.footer')
-	
-</div>
-@endsection
+                @endsection
