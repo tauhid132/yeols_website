@@ -31,14 +31,13 @@ Route::get('/about-us', [PageController::class, 'viewAboutUs'])->name('view.abou
 Route::get('/book-service', [PageController::class, 'viewBookService'])->name('view.book.service');
 Route::post('/book-service', [BookingController::class, 'bookService']);
 
-Route::get('/cockroaches-pest-control', [PageController::class, 'viewCockroachesPestControl'])->name('view.cockroaches.pest.control');
-Route::get('/bed-bugs-pest-control', [PageController::class, 'viewBedBugsPestControl'])->name('view.bed.bug.pest.control');
-Route::get('/termites-pest-control', [PageController::class, 'viewTermitesPestControl'])->name('view.termites.pest.control');
-Route::get('/rodents-pest-control', [PageController::class, 'viewRodentsPestControl'])->name('view.rodents.pest.control');
-Route::get('/ants-pest-control', [PageController::class, 'viewAntsPestControl'])->name('view.ants.pest.control');
-Route::get('/spiders-pest-control', [PageController::class, 'viewSpidersPestControl'])->name('view.spiders.pest.control');
-Route::get('/bees-pest-control', [PageController::class, 'viewBeesPestControl'])->name('view.bees.pest.control');
-Route::get('/flies-pest-control', [PageController::class, 'viewFliesPestControl'])->name('view.flies.pest.control');
+Route::get('/services/web-development', [PageController::class, 'viewWebDevelopment'])->name('view.web.development');
+Route::get('/services/mobile-app-development', [PageController::class, 'viewMobileAppDevelopment'])->name('view.mobile.app.development');
+Route::get('/services/software-development', [PageController::class, 'viewSoftwareDevelopment'])->name('view.software.development');
+Route::get('/services/ui-ux-design', [PageController::class, 'viewUiUxDesign'])->name('view.ui.ux.design');
+Route::get('/services/digital-marketing', [PageController::class, 'viewDigitalMarketing'])->name('view.digital.marketing');
+Route::get('/services/seo-services', [PageController::class, 'viewSeoServices'])->name('view.seo.services');
+
 
 Route::post('/subscribe-newsletter', [NewsLetterSubscriptionController::class, 'subscribeNewsletter'])->name('subscribe.newsletter');
 

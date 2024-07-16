@@ -35,36 +35,25 @@ class PageController extends Controller
         return view('book-service');
     }
 
-    public function viewCockroachesPestControl(){
-        return view('cockroaches-pest-control');
+    public function viewWebDevelopment(){
+        return view('web-development');
     }
-    public function viewBedBugsPestControl(){
-        return view('bed-bug-pest-control');
+    public function viewMobileAppDevelopment(){
+        return view('mobile-app-development');
     }
-    public function viewTermitesPestControl(){
-        return view('termites-pest-control');
+    public function viewSoftwareDevelopment(){
+        return view('software-development');
     }
-    public function viewRodentsPestControl(){
-        return view('rodents-pest-control');
+    public function viewUiUxDesign(){
+        return view('ui-ux-design');
     }
-    public function viewAntsPestControl(){
-        return view('ants-pest-control');
+    public function viewDigitalMarketing(){
+        return view('digital-marketing');
     }
-    public function viewSpidersPestControl(){
-        return view('spiders-pest-control');
+    public function viewSeoServices(){
+        return view('seo-services');
     }
-    public function viewBeesPestControl(){
-        return view('bees-pest-control');
-    }
-    public function viewFliesPestControl(){
-        return view('flies-pest-control');
-    }
-    public function viewSanitizing(){
-        return view('sanitizing-disinfecting');
-    }
-    public function viewRopeAccessCleaning(){
-        return view('rope-access-cleaning');
-    }
+  
 
     public function generateSitemap(){
         $path = public_path('sitemap.xml');

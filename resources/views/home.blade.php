@@ -5,15 +5,14 @@
     <div class="slider-block style-one mt-60">
         <div class="container"> 
             <div class="row row-gap-32">
-                <div class="col-xl-4 col-12">
+                <div class="col-md-4">
                     <div class="text">
-                        <div class="heading2 pr-55">Empowering Companies with Tailored IT Solutions</div>
+                        <div class="heading2 pr-55">Top IT Services for Small to Mid-Sized Businesses</div>
                         <div class="body2 mt-16">We provide custom software solutions for any industry. Creating high - value software and technology for your business. </div>
                     </div>
-                    <div class="block-button mt-40 d-flex gap-16 flex-wrap"><a class="button hover-button bg-black text-white border-none" href="about-us.html"> <span>Explore More</span></a><a class="button hover-button bg-grey border-none" href="contact-us.html"> <span>Contact</span></a></div>
                 </div>
-                <div class="col-xl-8 col-12">
-                    <div class="bg-img w-100"><video style="height: 493px; width: 850px" controls>
+                <div class="col-md-8">
+                    <div class="bg-img w-100"><video style="height: 100%; width: 100%" poster="{{ asset('intro_thumbnail.png') }}" controls>
                         <source src="{{ asset('intro.mp4') }}" type="video/mp4">
                             
                         </video></div>
@@ -162,7 +161,7 @@
                         <div class="text-label text-blue pt-4 pb-4 pl-12 pr-12 bg-grey bora-2 display-inline-block">What we do</div>
                         <div class="heading3 mt-12">Services that we are specialized in</div>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-12 text-end"><a class="text-button border-underline-blue display-inline-block" href="service-detail.html">View All industries</a></div>
+                    
                 </div>
                 <div class="row mt-40 row-gap-12 sub-nav-solution">
                     <div class="col-sm-6 col-12"> 
@@ -267,7 +266,6 @@
                                             <div class="body2 mt-12">They developed an outstanding mobile app for our business. Their team was highly skilled, communicative, and delivered on time. The app is intuitive, feature-rich, and has greatly improved our customer engagement. We couldn't be happier with the results and highly recommend Yeols for top-notch app development services.</div>
                                             <div class="infor mt-12">
                                                 <div class="text-title">Oscar</div>
-                                                <div class="caption1 text-on-surface-variant1">CEO Digital Avitex</div>
                                                 <div class="double-slash"><i class="icon-slash-bora"></i><i class="icon-slash-bora"></i></div>
                                             </div>
                                         </div>
@@ -279,8 +277,7 @@
                                             <div class="star flex-item-center gap-1"><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i><i class="ph-fill ph-star fs-20 text-yellow"></i></div>
                                             <div class="body2 mt-12">Yeols transformed our online presence with their exceptional SEO and digital marketing services. Our website's traffic and search rankings have significantly improved. Their team is knowledgeable, responsive, and truly understands our business needs. We highly recommend Yeols for anyone seeking impactful digital marketing solutions and outstanding SEO expertise.</div>
                                             <div class="infor mt-12">
-                                                <div class="text-title">Dani</div>
-                                                <div class="caption1 text-on-surface-variant1">CEO Digital Avitex</div>
+                                                <div class="text-title">Danny</div>
                                                 <div class="double-slash"><i class="icon-slash-bora"></i><i class="icon-slash-bora"></i></div>
                                             </div>
                                         </div>
@@ -364,25 +361,13 @@
                                             <div class="body2 pl-12">Follow-up to evaluate effectiveness and satisfaction</div>
                                         </div>
                                     </div>
-                                    <div class="line mt-24"></div>
-                                    <div class="flex-item-center mt-24"><i class="ph ph-envelope fs-20"></i>
-                                        <div class="body2 pl-12">hi.avitex@gmail.com</div>
-                                    </div>
-                                    <div class="flex-item-center mt-8"><i class="ph ph-phone-call fs-20"></i>
-                                        <div class="body2 pl-12">1-333-345-6868</div>
-                                    </div>
-                                    <div class="flex-item-center mt-8"><i class="ph ph-map-pin fs-20"></i>
-                                        <div class="body2 pl-12">101 E 129th St, East Chicago, IN 46312, US</div>
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-12 col-xl-4">
                                     <div class="form-block bora-16 bg-white pt-24 pb-24 pl-28 pr-28 d-flex flex-column gap-20">
                                         <div class="heading5">Schedule a free consultation</div>
                                         <div class="row gy-2">
-                                            <div class="col-12">
-                                                <label class="caption1 text-on-surface-variant1 pb-8" for="phone">Phone</label>
-                                                <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="number" id="phone" placeholder=""/>
-                                            </div>
+                                            
                                             <div class="col-12 col-sm-6"> 
                                                 <label class="caption1 text-on-surface-variant1 pb-8" for="firstName">First Name</label>
                                                 <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="text" id="firstName" placeholder=""/>
@@ -396,21 +381,10 @@
                                                 <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="number" id="phone" placeholder=""/>
                                             </div>
                                             <div class="col-12">
-                                                <label class="caption1 text-on-surface-variant1 pb-8" for="companyEmail">Company Email</label>
-                                                <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="email" id="companyEmail" placeholder=""/>
-                                            </div>
-                                            <div class="col-12">
                                                 <label class="caption1 text-on-surface-variant1 pb-8" for="company">Company/ Organization</label>
                                                 <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="text" id="company" placeholder=""/>
                                             </div>
-                                            <div class="col-12"> 
-                                                <label class="caption1 text-on-surface-variant1 pb-8" for="cate">How can we help you?</label>
-                                                <select class="w-100 bg-white pl-16 pr-24 pt-8 pb-8 bora-4 border-outline" name="form" id="cate">
-                                                    <option value="Financial Planning">Financial Planning</option>
-                                                    <option value="Business Planning">Business Planning</option>
-                                                    <option value="Development Planning">Development Planning</option>
-                                                </select><i class="ph ph-caret-down"></i>
-                                            </div>
+                                           
                                             <div class="col-12"> 
                                                 <label class="caption1 text-on-surface-variant1 pb-8" for="message">Your message</label>
                                                 <textarea class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline display-block" name="message" rows="3" id="message" placeholder=""></textarea>
