@@ -1,7 +1,7 @@
 <nav class="navbar sidebar navbar-expand-xl navbar-light">
     <div class="d-flex align-items-center">
         <a class="navbar-brand" href="{{ route('view.dashboard') }}">
-            <img class="light-mode-item navbar-brand-item" src="{{ asset('logo-2.png') }}" alt="logo" style="height: 50px; width:200px">
+            <img class="light-mode-item navbar-brand-item" src="{{ asset('logo.png') }}" alt="logo" style="height: 45px; width:200px">
             {{-- <img class="dark-mode-item navbar-brand-item" src="{{ asset('logo.svg') }}" alt="logo" style="height: 40px"> --}}
         </a>
     </div>

@@ -110,42 +110,42 @@
                 <div class="heading3 text-center mt-12">Our Services</div>
                 <div class="row row-gap-40 mt-40 sub-nav-solution">
                     <div class="col-12 col-xl-4 col-sm-6">
-                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution1"><a class="main-item flex-column-item-center">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution1"><a href="{{ route('view.web.development') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('web-development.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">Web Development</div>
                             <div class="service-desc text-on-surface-variant1 text-center mt-12">We are an IT company specializing in web development solutions, delivering innovative and customized websites to meet your business needs. Our expert team ensures top-notch design, functionality, and user experience, driving your online presence and success.</div></a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-4 col-sm-6">
-                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution2"><a class="main-item flex-column-item-center">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution2"><a href="{{ route('view.mobile.app.development') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('app-development.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">App Development</div>
                             <div class="service-desc text-on-surface-variant1 text-center mt-12">We turn your mobile app vision into reality. Our IT experts craft user-friendly, feature-rich apps for iOS and Android, helping your business flourish in today's mobile world.</div></a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-4 col-sm-6">
-                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution3"><a class="main-item flex-column-item-center">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution3"><a href="{{ route('view.software.development') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('software-development.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">Software Development</div>
                             <div class="service-desc text-on-surface-variant1 text-center mt-12">Your IT needs, solved. We craft custom software solutions for businesses, from web and mobile apps to powerful back-end systems. We transform your ideas into reality, boosting efficiency and growth.</div></a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-4 col-sm-6">
-                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution4"><a class="main-item flex-column-item-center">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution4"><a href="{{ route('view.digital.marketing') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('digital-marketing.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">Digital Marketing</div>
                             <div class="service-desc text-on-surface-variant1 text-center mt-12">Let us supercharge your IT brand online! We combine expert SEO strategies with digital marketing muscle to get your website seen by the right audience. Drive organic traffic and leads with our data-driven approach.</div></a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-4 col-sm-6">
-                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution5"><a class="main-item flex-column-item-center">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution5"><a href="{{ route('view.seo.services') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('seo.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">SEO</div>
                             <div class="service-desc text-on-surface-variant1 text-center mt-12">We unlock your IT brand's online potential! Our SEO experts optimize your website for search engines, driving high-quality traffic and leads. Get found by the right customers and soar in search rankings.</div></a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-4 col-sm-6">
-                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution5"><a class="main-item flex-column-item-center">
+                        <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution5"><a href="{{ route('view.ui.ux.design') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('ui.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">UI / UX Design</div>
                             <div class="service-desc text-on-surface-variant1 text-center mt-12">We elevate your IT products! Our UI/UX design creates user-friendly interfaces and intuitive experiences. We craft beautiful, functional designs that drive engagement and success for your software.</div></a>

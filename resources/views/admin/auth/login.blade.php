@@ -5,13 +5,13 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com/">
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Poppins:wght@400;500;700&amp;display=swap">
-	<link rel="stylesheet" href="{{ asset('assets/dashboard/vendor/font-awesome/css/all.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/dashboard/vendor/bootstrap-icons/bootstrap-icons.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/dashboard/vendor/tiny-slider/tiny-slider.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/dashboard/vendor/glightbox/css/glightbox.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/dashboard/vendor/choices/css/choices.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/dashboard/vendor/flatpickr/css/flatpickr.min.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/dashboard/css/style.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/admin_theme/vendor/font-awesome/css/all.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/admin_theme/vendor/bootstrap-icons/bootstrap-icons.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/admin_theme/vendor/tiny-slider/tiny-slider.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/admin_theme/vendor/glightbox/css/glightbox.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/admin_theme/vendor/choices/css/choices.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/admin_theme/vendor/flatpickr/css/flatpickr.min.css') }}">
+	<link rel="stylesheet" href="{{ asset('assets/admin_theme/css/style.css') }}">
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css" />
 	<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.9/css/responsive.bootstrap.min.css" />
 	<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
@@ -75,13 +75,13 @@
 </main>
 </body>
 
-<script src="{{ asset('assets/dashboard/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/admin_theme/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="{{ asset('assets/dashboard/vendor/tiny-slider/tiny-slider.js') }}"></script>
-<script src="{{ asset('assets/dashboard/vendor/glightbox/js/glightbox.js') }}"></script>
-<script src="{{ asset('assets/dashboard/vendor/choices/js/choices.min.js') }}"></script>
-<script src="{{ asset('assets/dashboard/vendor/flatpickr/js/flatpickr.min.js') }}"></script>
-<script src="{{ asset('assets/dashboard/js/functions.js') }}"></script>
+<script src="{{ asset('assets/admin_theme/vendor/tiny-slider/tiny-slider.js') }}"></script>
+<script src="{{ asset('assets/admin_theme/vendor/glightbox/js/glightbox.js') }}"></script>
+<script src="{{ asset('assets/admin_theme/vendor/choices/js/choices.min.js') }}"></script>
+<script src="{{ asset('assets/admin_theme/vendor/flatpickr/js/flatpickr.min.js') }}"></script>
+<script src="{{ asset('assets/admin_theme/js/functions.js') }}"></script>
 
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>

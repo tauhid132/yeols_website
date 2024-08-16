@@ -1,5 +1,5 @@
 @extends('master')
-@section('page-title', "Contact Us")
+@section('page-title', "Web Design & Development")
 @section('main-body')
 <div id="content">
     <div class="bg-subpage"></div>
