@@ -62,10 +62,10 @@ class BlogController extends Controller
         $blog = Blog::find($id);
         if($request->hasFile('cover_image')){
             $new_image_name = uniqid().'.'.$request->cover_image->extension();
-            $request->cover_image->move(public_path('assets/images/blog_images'), $new_image_name);
+            $request->cover_image->move(public_path('images/blog_images'), $new_image_name);
             //delete old
             $old_image = $blog->cover_image;
-            File::delete(public_path("assets/images/blog_images".$old_image));
+            File::delete(public_path("images/blog_images".$old_image));
             $blog = Blog::find($id)->update([
                 'title' => $request->title,
                 'status' => $request->status,
@@ -89,7 +89,7 @@ class BlogController extends Controller
     }
     private function storeImage($request){
         $new_image_name = uniqid().'.'.$request->cover_image->extension();
-        $request->cover_image->move(public_path('assets/images/blog_images'), $new_image_name);
+        $request->cover_image->move(public_path('images/blog_images'), $new_image_name);
         return $new_image_name;
     }
 }

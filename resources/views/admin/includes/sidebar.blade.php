@@ -15,6 +15,7 @@
                
                 <li class="nav-item"><a href="{{ route('viewUsers') }}" class="nav-link {{ Request::is('admin/users/*') ? 'active':''  }}"><i class="fa fa-user"></i> Users</a></li>
                 <li class="nav-item"><a href="{{ route('viewAllBlogs') }}" class="nav-link {{ Request::is('admin/blogs/*') ? 'active':''  }}"><i class="fa fa-blog "></i> Blog</a></li>
+                <li class="nav-item"><a href="{{ route('viewProjects') }}" class="nav-link {{ Request::is('admin/bookings/*') ? 'active':''  }}"><i class="fa fa-briefcase "></i> Projects</a></li>
                 <li class="nav-item"><a href="{{ route('view.bookings') }}" class="nav-link {{ Request::is('admin/bookings/*') ? 'active':''  }}"><i class="fa fa-ticket "></i> Bookings</a></li>
                 <li class="nav-item"><a href="{{ route('view.customer.reviews') }}" class="nav-link {{ Request::is('admin/customer-reviews/*') ? 'active':''  }}"><i class="fa fa-star "></i> Customer Reviews</a></li>
                 <li class="nav-item"><a href="{{ route('view.contact.submits') }}" class="nav-link {{ Request::is('admin/contact-submits/*') ? 'active':''  }}"><i class="fa fa-address-book "></i> Contact Submits</a></li>

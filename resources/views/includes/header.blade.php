@@ -10,7 +10,7 @@
             </li>
             
           
-            <li> <a href="#!">Portfolio</a>
+            <li> <a class="{{ Request::is('portfolios') ? 'active':''  }}" href="{{ route('view.portfolios') }}">Portfolio</a>
               
             </li>
             <li> <a href="#!">Services</a>

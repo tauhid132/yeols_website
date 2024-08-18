@@ -7,6 +7,7 @@ use App\Http\Controllers\ContactUsSubmissionController;
 use App\Http\Controllers\CustomerReviewController;
 use App\Http\Controllers\NewsLetterSubscriptionController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Models\Booking;
@@ -41,7 +42,8 @@ Route::get('/services/seo-services', [PageController::class, 'viewSeoServices'])
 
 Route::post('/subscribe-newsletter', [NewsLetterSubscriptionController::class, 'subscribeNewsletter'])->name('subscribe.newsletter');
 
-Route::get('/sanitizing-disinfecting-service', [PageController::class, 'viewSanitizing'])->name('view.sanitizing');
+Route::get('/portfolios', [PageController::class, 'viewPortfolios'])->name('view.portfolios');
+Route::get('/portfolios/{id}', [PageController::class, 'viewSingleProject'])->name('view.portfolio.single');
 Route::get('/rope-access-cleaning', [PageController::class, 'viewRopeAccessCleaning'])->name('view.rope.access.cleaning');
 
 
@@ -79,7 +81,13 @@ Route::middleware('auth')->prefix('admin')->group(function () {
 
     Route::get('generate-sitemap',[PageController::class, 'generateSitemap'])->name('generate.sitemap');
 
-
+    Route::get('projects/all-projects',[PortfolioController::class, 'viewProjects'])->name('viewProjects');
+    Route::get('projects/all-projects/get-projects',[PortfolioController::class, 'getProjects'])->name('getProjects');
+    Route::get('projects/create-new-project',[PortfolioController::class, 'viewCreateNewProject'])->name('viewCreateNewProject');
+    Route::post('projects/create-new-project',[PortfolioController::class, 'createNewProject']);
+    Route::get('projects/edit-project/{id}',[PortfolioController::class, 'viewEditProject'])->name('viewEditProject');
+    Route::post('projects/edit-project/{id}',[PortfolioController::class, 'editProject']);
+    Route::post('projects/delete-project',[PortfolioController::class, 'deleteProject'])->name('deleteProject');
 
     Route::middleware('auth')->prefix('profile')->group(function () {
         Route::get('/my-profile', [ProfileController::class, 'viewMyProfile'])->name('viewMyProfile');

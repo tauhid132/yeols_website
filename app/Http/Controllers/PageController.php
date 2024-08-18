@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Portfolio;
 use Illuminate\Http\Request;
 use App\Models\CustomerReview;
 use Spatie\Sitemap\SitemapGenerator;
@@ -54,6 +55,16 @@ class PageController extends Controller
         return view('seo-services');
     }
   
+    public function viewPortfolios(){
+        return view('portfolios',[
+            'portfolios' => Portfolio::all()
+        ]);
+    }
+    public function viewSingleProject($id){
+        return view('single-project',[
+            'project' => Portfolio::find($id)
+        ]);
+    }
 
     public function generateSitemap(){
         $path = public_path('sitemap.xml');
