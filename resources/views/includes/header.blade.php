@@ -26,7 +26,7 @@
             <li> <a class="{{ Request::is('about-us') ? 'active':''  }}" href="{{ route('view.about.us') }}">About Us</a>
               
             </li>
-            <li> <a class="{{ Request::is('blogs') ? 'active':''  }}" href="{{ route('view.blogs') }}">Blog</a>
+            <li> <a class="{{ Request::is('blogs') ? 'active':''  }}" href="{{ route('view.blogs') }}">Blogs</a>
               
             </li>
             <li> <a class="{{ Request::is('contact-us') ? 'active':''  }}" href="{{ route('view.contact.us') }}">Contact Us</a>
@@ -39,7 +39,7 @@
           </ul>
         </div>
         <div class="right-block flex-item-center">
-         <a class="button hover-button bg-blue text-white border-none text-button-small" href="https://calendly.com/yeols-marketing/30min"><i class="fa fa-calendar"></i> <span>Schedule a Meeting</span></a>
+         <a class="button hover-button bg-green text-black border-none text-button-small" href="https://calendly.com/yeols-marketing/30min"><i class="fa fa-calendar"></i> <span>Schedule a Meeting</span></a>
           <div class="search-icon"> <i class="ph ph-magnifying-glass"></i></div>
           <div class="menu-humburger"><i class="ph ph-list"></i></div>
         </div>

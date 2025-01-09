@@ -27,13 +27,13 @@
         <div class="col-12 col-lg-5">
           <div class="infor">
             <div class="heading">
-              <div class="caption1 fw-700 text-blue bg-blue-surface display-inline-block pt-4 pb-4 pl-10 pr-10 bora-8">Contact Us</div>
+              <div class="text-label pt-4 pb-4 pl-12 pr-12 bg-green bora-2 display-inline-block rounded">Contact Us</div>
               <div class="heading2 mt-16">We are just one message away!</div>
               
             </div>
             
             <div class="style-contact-us">
-              <div class="list-social flex-item-center gap-10 mt-28"><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.facebook.com/yeolsIT" target="_blank"><i class="icon-facebook"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.linkedin.com/" target="_blank"><i class="icon-linkedin"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.twitter.com/" target="_blank"><i class="icon-twitter"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.youtube.com/" target="_blank"><i class="icon-youtube"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.instagram.com/yeolslimited/" target="_blank"><i class="icon-instagram fs-14"></i></a></div>
+              <div class="list-social flex-item-center gap-10 mt-28"><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.facebook.com/yeolslimited/" target="_blank"><i class="icon-facebook"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.linkedin.com/company/103704744" target="_blank"><i class="icon-linkedin"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.twitter.com/" target="_blank"><i class="icon-twitter"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.youtube.com/" target="_blank"><i class="icon-youtube"></i></a><a class="item bora-50 w-40 h-40 flex-center border-on-surface" href="https://www.instagram.com/yeolslimited/" target="_blank"><i class="icon-instagram fs-14"></i></a></div>
             </div>
             <div class="list-more-infor mt-40">
               <div class="item flex-item-center"><i class="ph-bold ph-phone text-white bg-blue p-12 bora-50"></i>
@@ -73,6 +73,5 @@
       </div>
     </div>
   </div>
-  
 </div>
 @endsection

@@ -1,16 +1,17 @@
 <?php
 
+use App\Models\Booking;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
-use App\Http\Controllers\BookingController;
-use App\Http\Controllers\ContactUsSubmissionController;
-use App\Http\Controllers\CustomerReviewController;
-use App\Http\Controllers\NewsLetterSubscriptionController;
 use App\Http\Controllers\PageController;
-use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ProfileController;
-use App\Models\Booking;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\BlogCategoryController;
+use App\Http\Controllers\CustomerReviewController;
+use App\Http\Controllers\ContactUsSubmissionController;
+use App\Http\Controllers\NewsLetterSubscriptionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,7 +45,8 @@ Route::post('/subscribe-newsletter', [NewsLetterSubscriptionController::class, '
 
 Route::get('/portfolios', [PageController::class, 'viewPortfolios'])->name('view.portfolios');
 Route::get('/portfolios/{id}', [PageController::class, 'viewSingleProject'])->name('view.portfolio.single');
-Route::get('/rope-access-cleaning', [PageController::class, 'viewRopeAccessCleaning'])->name('view.rope.access.cleaning');
+Route::get('/terms-and-conditions', [PageController::class, 'viewTermsConditions'])->name('view.terms.conditions');
+Route::get('/privacy-policy', [PageController::class, 'viewPrivacyPolicy'])->name('view.privacy.policy');
 
 
 Route::middleware('auth')->prefix('admin')->group(function () {
@@ -66,6 +68,13 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('blogs/edit-blog/{id}',[BlogController::class, 'viewEditBlog'])->name('editBlog');
     Route::post('blogs/edit-blog/{id}',[BlogController::class, 'editBlog']);
     Route::post('blogs/delete-blog',[BlogController::class, 'deleteBlog'])->name('deleteBlog');
+
+
+    Route::get('blog-categories',[BlogCategoryController::class, 'adminViewBlogCategories'])->name('admin.view.blog.categories');
+    Route::get('blog-categories/get-blog-categories',[BlogCategoryController::class, 'adminGetBlogCategories'])->name('admin.get.blog.categories');
+    Route::post('blog-categories/add-edit-category',[BlogCategoryController::class, 'adminAddEditCategory'])->name('admin.add.edit.category');
+    Route::post('blog-categories/get-category',[BlogCategoryController::class, 'adminGetCategory'])->name('admin.get.blog.category');
+    Route::post('blog-categories/delete-blog-category',[BlogCategoryController::class, 'adminDeleteBlogCategory'])->name('admin.delete.blog.category');
 
     Route::get('bookings/view-bookings',[BookingController::class, 'viewBookings'])->name('view.bookings');
     Route::get('bookings/get-bookings',[BookingController::class, 'getBookings'])->name('get.bookings');

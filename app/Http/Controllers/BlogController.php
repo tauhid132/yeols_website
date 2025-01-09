@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\BlogCategory;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -41,12 +42,15 @@ class BlogController extends Controller
         ->make(true);
     }
     public function viewCreateNewBlog(){
-        return view('admin.blogs.add-new-blog');
+        return view('admin.blogs.add-new-blog',[
+            'categories' => BlogCategory::all()
+        ]);
     }
     public function createNewBlog(Request $request){
         $blog = Blog::create([
             'title' => $request->title,
             'body' => $request->body,
+            'blog_category_id' => $request->blog_category_id,
             'posted_by' => Auth::user()->id,
             'slug' => Str::slug($request->title),
             'cover_image' => $this->storeImage($request)
@@ -56,19 +60,21 @@ class BlogController extends Controller
     public function viewEditBlog($id){
         return view('admin.blogs.edit-blog',[
             'blog' => Blog::find($id),
+            'categories' => BlogCategory::all()
         ]);
     }
     public function editBlog(Request $request,$id){
         $blog = Blog::find($id);
         if($request->hasFile('cover_image')){
             $new_image_name = uniqid().'.'.$request->cover_image->extension();
-            $request->cover_image->move(public_path('images/blog_images'), $new_image_name);
+            $request->cover_image->move(public_path('img/blogs'), $new_image_name);
             //delete old
             $old_image = $blog->cover_image;
-            File::delete(public_path("images/blog_images".$old_image));
+            File::delete(public_path("img/blogs".$old_image));
             $blog = Blog::find($id)->update([
                 'title' => $request->title,
                 'status' => $request->status,
+                'blog_category_id' => $request->blog_category_id,
                 'body' => $request->body,
                 'slug' => Str::slug($request->title),
                 'cover_image' => $new_image_name,
@@ -77,6 +83,7 @@ class BlogController extends Controller
             $blog = Blog::find($id)->update([
                 'title' => $request->title,
                 'status' => $request->status,
+                'blog_category_id' => $request->blog_category_id,
                 'body' => $request->body,
                 'slug' => Str::slug($request->title),
             ]);
@@ -89,7 +96,7 @@ class BlogController extends Controller
     }
     private function storeImage($request){
         $new_image_name = uniqid().'.'.$request->cover_image->extension();
-        $request->cover_image->move(public_path('images/blog_images'), $new_image_name);
+        $request->cover_image->move(public_path('img/blogs'), $new_image_name);
         return $new_image_name;
     }
 }

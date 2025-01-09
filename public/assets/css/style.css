@@ -5536,12 +5536,12 @@ a.border-underline-purple-2px:hover {
 }
 
 .section-service .container .service-item:hover {
-  background-color: var(--blue);
+  background-color: var(--green);
 }
 
 .section-service .container .service-item:hover .heading6,
 .section-service .container .service-item:hover i {
-  color: var(--white);
+  color: var(--black-surface);
 }
 
 @media (min-width: 1024px) {
@@ -5581,8 +5581,8 @@ a.border-underline-purple-2px:hover {
   left: 0;
   bottom: 0;
   width: 0;
-  height: 1px;
-  background-color: var(--on-surface);
+  height: 3px;
+  background-color: #63e483;
   transition: 0.3s;
 }
 

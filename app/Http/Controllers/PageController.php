@@ -26,7 +26,8 @@ class PageController extends Controller
     }
     public function viewSingleBlog($slug){
         return view('single-blog',[
-            'blog' => Blog::where('slug', $slug)->first()
+            'blog' => Blog::where('slug', $slug)->first(),
+            'blogs' => Blog::all()
         ]);
     }
     public function viewAboutUs(){
@@ -64,6 +65,14 @@ class PageController extends Controller
         return view('single-project',[
             'project' => Portfolio::find($id)
         ]);
+    }
+
+    public function viewTermsConditions(){
+        return view('terms-conditions');
+    }
+
+    public function viewPrivacyPolicy(){
+        return view('privacy-policy');
     }
 
     public function generateSitemap(){

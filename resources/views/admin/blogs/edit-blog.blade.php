@@ -3,9 +3,9 @@
 @section('main-body')
 <div class="page-content-wrapper p-xxl-4">
     <div class="row">
-        <div class="col-12 mb-4 mb-sm-5">
+        <div class="col-12 mb-4">
             <div class="d-sm-flex justify-content-between align-items-center">
-                <h1 class="h3 mb-3 mb-sm-0">Update Blog</h1>
+                <h1 class="h4 mb-3 mb-sm-0"><i class="fa fa-edit me-2"></i>Update Blog</h1>
             </div>
         </div>
     </div>
@@ -16,7 +16,7 @@
                 <div class="card shadow">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-8 ">
+                            <div class="col-lg-6 ">
                                 <div class="mb-3">
                                     <label class="form-label" for="product-price-input">Title</label>
                                     <div class="input-group mb-3">
@@ -24,12 +24,22 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-3">
                                 <div class="mb-3">
                                     <label class="form-label" for="product-price-input">Status</label>
                                     <select class="form-select" name="status" data-choices data-choices-search-false>
                                         <option {{ $blog->status == 1 ? 'selected' : '' }} value="1" selected>Visible</option>
                                         <option {{ $blog->status == 0 ? 'selected' : '' }} value="0">Hidden</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="mb-3">
+                                    <label class="form-label" for="product-price-input">Category</label>
+                                    <select class="form-select" name="blog_category_id">
+                                        @foreach ($categories as $category)
+                                            <option {{ $blog->blog_category_id == $category->id ? 'selected' : '' }} value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                        @endforeach
                                     </select>
                                 </div>
                             </div>

@@ -14,9 +14,17 @@
                
                
                 <li class="nav-item"><a href="{{ route('viewUsers') }}" class="nav-link {{ Request::is('admin/users/*') ? 'active':''  }}"><i class="fa fa-user"></i> Users</a></li>
-                <li class="nav-item"><a href="{{ route('viewAllBlogs') }}" class="nav-link {{ Request::is('admin/blogs/*') ? 'active':''  }}"><i class="fa fa-blog "></i> Blog</a></li>
+                <li class="nav-item">
+                    <a class="nav-link {{ Request::is('admin/blogs/*') ? 'active':''  }}" data-bs-toggle="collapse" href="#collapseBlogs" role="button" aria-expanded="false" aria-controls="collapsebooking">
+                        <i class="fa fa-blog"></i> Blogs
+                    </a>
+                    <ul class="nav collapse flex-column" id="collapseBlogs" data-bs-parent="#navbar-sidebar">
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('viewAllBlogs') }}">Blogs List</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="{{ route('admin.view.blog.categories') }}">Blog Category</a></li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a href="{{ route('viewProjects') }}" class="nav-link {{ Request::is('admin/bookings/*') ? 'active':''  }}"><i class="fa fa-briefcase "></i> Projects</a></li>
-                <li class="nav-item"><a href="{{ route('view.bookings') }}" class="nav-link {{ Request::is('admin/bookings/*') ? 'active':''  }}"><i class="fa fa-ticket "></i> Bookings</a></li>
+              
                 <li class="nav-item"><a href="{{ route('view.customer.reviews') }}" class="nav-link {{ Request::is('admin/customer-reviews/*') ? 'active':''  }}"><i class="fa fa-star "></i> Customer Reviews</a></li>
                 <li class="nav-item"><a href="{{ route('view.contact.submits') }}" class="nav-link {{ Request::is('admin/contact-submits/*') ? 'active':''  }}"><i class="fa fa-address-book "></i> Contact Submits</a></li>
                 <li class="nav-item"><a href="{{ route('view.newsletter.submits') }}" class="nav-link {{ Request::is('admin/newsletter/*') ? 'active':''  }}"><i class="fa fa-address-book "></i> Newsletter Submits</a></li>

@@ -599,13 +599,13 @@ if (listSlideItem && mouseCursor) {
 // testimonial home1
 $(".section-testimonial.style-one .testimonial-item").slick({
     dots: true,
-    arrows: false,
+    arrows: true,
     slidesToShow: 1,
     slidesToScroll: 4,
     touchThreshold: 100,
     swipe: true,
     swipeToSlide: true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     speed: 500,
     grab: true,
@@ -1145,73 +1145,73 @@ if (blogItems) {
 // Extract blog item information from localStorage
 let selectedBlogInfo = JSON.parse(localStorage.getItem('selectedBlog'));
 
-// Display blog information on the blog details page
-if (document.querySelector('.blog-detail-page')) {
-    if (selectedBlogInfo !== null) {
-        if (document.querySelector('.category') && document.querySelector('.title') && document.querySelector('.main-img img')) {
-            document.querySelector('.category').textContent = selectedBlogInfo.cate;
-            document.querySelector('.title').textContent = selectedBlogInfo.title;
-            document.querySelector('.date').textContent = selectedBlogInfo.date;
-            document.querySelector('.main-img img').src = selectedBlogInfo.img;
-        }
-    }
-}
+// // Display blog information on the blog details page
+// if (document.querySelector('.blog-detail-page')) {
+//     if (selectedBlogInfo !== null) {
+//         if (document.querySelector('.category') && document.querySelector('.title') && document.querySelector('.main-img img')) {
+//             document.querySelector('.category').textContent = selectedBlogInfo.cate;
+//             document.querySelector('.title').textContent = selectedBlogInfo.title;
+//             document.querySelector('.date').textContent = selectedBlogInfo.date;
+//             document.querySelector('.main-img img').src = selectedBlogInfo.img;
+//         }
+//     }
+// }
 
 
 // Like Blog Detail
-const comments = document.querySelectorAll('.blog-detail-page .blog-comment .comment-item .like')
+// const comments = document.querySelectorAll('.blog-detail-page .blog-comment .comment-item .like')
 
-if (comments) {
-    comments.forEach(cmt => {
-        cmt.addEventListener('click', () => {
-            cmt.classList.toggle('liked')
-            let heartIcon = cmt.querySelector('i')
-            let numberLiked = cmt.querySelector('.text-button')
-            let number = parseFloat(numberLiked.innerHTML);
+// if (comments) {
+//     comments.forEach(cmt => {
+//         cmt.addEventListener('click', () => {
+//             cmt.classList.toggle('liked')
+//             let heartIcon = cmt.querySelector('i')
+//             let numberLiked = cmt.querySelector('.text-button')
+//             let number = parseFloat(numberLiked.innerHTML);
 
-            if (cmt.classList.contains('liked')) {
-                heartIcon.classList.replace('ph-light', 'ph-fill')
-                number = number + 1
-                numberLiked.innerHTML = number.toString()
-            }
-            else {
-                heartIcon.classList.replace('ph-fill', 'ph-light')
-                number = number - 1
-                numberLiked.innerHTML = number.toString()
-            }
-        })
-    })
-}
+//             if (cmt.classList.contains('liked')) {
+//                 heartIcon.classList.replace('ph-light', 'ph-fill')
+//                 number = number + 1
+//                 numberLiked.innerHTML = number.toString()
+//             }
+//             else {
+//                 heartIcon.classList.replace('ph-fill', 'ph-light')
+//                 number = number - 1
+//                 numberLiked.innerHTML = number.toString()
+//             }
+//         })
+//     })
+// }
 
 
-// Show, hide reply Blog Detail
-const showReplyBtn = document.querySelectorAll('.blog-detail-page .blog-comment .comment-item .cmt')
-const listReply = document.querySelectorAll('.blog-detail-page .blog-comment .list-reply')
+// // Show, hide reply Blog Detail
+// const showReplyBtn = document.querySelectorAll('.blog-detail-page .blog-comment .comment-item .cmt')
+// const listReply = document.querySelectorAll('.blog-detail-page .blog-comment .list-reply')
 
-if (showReplyBtn) {
-    showReplyBtn.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const parentCmt = btn.parentElement.parentElement.parentElement
-            const dataCmt = parentCmt.getAttribute('data-cmt')
+// if (showReplyBtn) {
+//     showReplyBtn.forEach(btn => {
+//         btn.addEventListener('click', () => {
+//             const parentCmt = btn.parentElement.parentElement.parentElement
+//             const dataCmt = parentCmt.getAttribute('data-cmt')
 
-            listReply.forEach(reply => {
-                const dataReply = reply.getAttribute('data-cmt')
+//             listReply.forEach(reply => {
+//                 const dataReply = reply.getAttribute('data-cmt')
 
-                if (dataReply == dataCmt) {
-                    reply.classList.toggle('show')
-                    btn.classList.toggle('show')
+//                 if (dataReply == dataCmt) {
+//                     reply.classList.toggle('show')
+//                     btn.classList.toggle('show')
 
-                    const textShow = btn.querySelector('.text-button')
-                    if (btn.classList.contains('show')) {
-                        textShow.innerHTML = 'Hide Replies'
-                    } else {
-                        textShow.innerHTML = 'Show Replies'
-                    }
-                }
-            })
-        })
-    })
-}
+//                     const textShow = btn.querySelector('.text-button')
+//                     if (btn.classList.contains('show')) {
+//                         textShow.innerHTML = 'Hide Replies'
+//                     } else {
+//                         textShow.innerHTML = 'Show Replies'
+//                     }
+//                 }
+//             })
+//         })
+//     })
+// }
 
 
 // add remove wishlist product in shop

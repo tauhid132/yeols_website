@@ -3,22 +3,22 @@
 @section('main-body')
 <div class="page-content-wrapper p-xxl-4">
     <div class="row">
-        <div class="col-12 mb-4 mb-sm-5">
+        <div class="col-12 mb-4">
             <div class="d-sm-flex justify-content-between align-items-center">
-                <h1 class="h3 mb-3 mb-sm-0">Admin List</h1>
+                <h1 class="h4 mb-3 mb-sm-0"><i class="fa fa-user me-2"></i>Admin List</h1>
                 <div class="d-grid">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#addUserModal" class="btn btn-primary mb-0"><i class="fa fa-plus me-2"></i>Add New Admin</a>	
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#addUserModal" class="btn btn-primary btn-sm mb-0"><i class="fa fa-plus me-2"></i>Add New Admin</a>	
                 </div>					
             </div>
         </div>
     </div>
     <div class="card shadow mt-1">
         <div class="card-body table-responsive ">
-            <table id="users-table" class="table align-middle p-2 mb-0 table-hover">
-                <thead class="table-light">
+            <table id="users-table" class="table align-middle pt-2 mb-0 table-hover table-bordered">
+                <thead class="table-primary">
                     <tr>
                         <th>No</th>
-                        <th>Nombre</th>
+                        <th>Name</th>
                         <th>Email</th>
                         <th>Status</th>
                         <th>Action</th>

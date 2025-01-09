@@ -1,21 +1,21 @@
 @extends('admin.master')
-@section('title',"All Blogs")
+@section('title',"Blogs")
 @section('main-body')
 <div class="page-content-wrapper p-xxl-4">
     <div class="row">
-        <div class="col-12 mb-4 mb-sm-5">
+        <div class="col-12 mb-4">
             <div class="d-sm-flex justify-content-between align-items-center">
-                <h1 class="h3 mb-3 mb-sm-0">Blogs</h1>
+                <h1 class="h4 mb-3 mb-sm-0"><i class="fa fa-blog me-2"></i>Blogs</h1>
                 <div class="d-grid">
-                    <a href="{{ route('createNewBlog') }}" class="btn btn-success mb-0"><i class="fa fa-plus me-2"></i>Add New Blog</a>	
+                    <a href="{{ route('createNewBlog') }}" class="btn btn-success btn-sm mb-0"><i class="fa fa-plus me-2"></i>Add New Blog</a>	
                 </div>					
             </div>
         </div>
     </div>
     <div class="card shadow mt-1">
         <div class="card-body table-responsive ">
-            <table id="users-table" class="table align-middle p-2 mb-0 table-hover">
-                <thead class="table-light">
+            <table id="users-table" class="table align-middle pt-2 mb-0 table-hover table-bordered">
+                <thead class="table-primary">
                     <tr>
                         <th>No</th>
                         <th>Title</th>

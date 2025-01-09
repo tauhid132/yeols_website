@@ -43,12 +43,12 @@
 </style>
 <body>
     <main>
-        @include('admin.includes.header')
         
+        @include('admin.includes.sidebar')
         <!-- Page content START -->
         <div  class="page-content">
             <div id="">
-                @include('admin.includes.sidebar')
+                @include('admin.includes.header')
                 @yield('main-body')
             </div>
         </div>

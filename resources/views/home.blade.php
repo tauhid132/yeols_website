@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <div class="bg-img w-100"><video style="height: 100%; width: 100%" poster="{{ asset('intro_thumbnail.png') }}" controls>
+                    <div class="bg-img w-100 rounded-5"><video style="height: 100%; width: 100%" poster="{{ asset('intro_thumbnail.png') }}" controls>
                         <source src="{{ asset('intro.mp4') }}" type="video/mp4">
                             
                         </video></div>
@@ -25,11 +25,11 @@
                 <div class="content">
                     <div class="row row-gap-12 pb-40">
                         <div class="col-12 col-xl-5 col-md-6">
-                            <div class="text-label text-white bg-blue">About Us</div>
+                            <div class="text-label rounded text-black bg-green">About Us</div>
                             <div class="heading4 text-white mt-16">We ensure quality works and customer's satisfaction</div>
                         </div>
                         <div class="col-12 col-md-6"> 
-                            <div class="desc text-white">Your IT Services Partner! We offer customized IT solutions, from managed services to cloud computing and cybersecurity. Empower your business with our expertise for growth and efficiency. </div><a class="text-button-small text-white border-underline-white-2px mt-16" href="about-us.html">Join us today!</a>
+                            <div class="desc text-white">Your IT Services Partner! We offer customized IT solutions, from managed services to cloud computing and cybersecurity. Empower your business with our expertise for growth and efficiency. </div><a class="text-button-small text-white border-underline-white-2px mt-16" href="{{ route('view.contact.us') }}">Contact us today!</a>
                         </div>
                     </div>
                     <div class="line"></div>
@@ -37,7 +37,7 @@
                         <div class="col-6 col-md-3"> 
                             <div class="counter-item"> 
                                 <div class="flex-item-center">
-                                    <div class="count-number heading4 text-white">100</div><span class="heading3 text-white">+</span>
+                                    <div class="count-number heading4 text-white">50</div><span class="heading3 text-white">+</span>
                                 </div>
                                 <div class="body1 mt-4 text-white">Happy Customers</div>
                             </div>
@@ -45,7 +45,7 @@
                         <div class="col-6 col-md-3"> 
                             <div class="counter-item"> 
                                 <div class="flex-item-center">
-                                    <div class="count-number heading4 text-white">150</div><span class="heading3 text-white">+</span>
+                                    <div class="count-number heading4 text-white">80</div><span class="heading3 text-white">+</span>
                                 </div>
                                 <div class="body1 mt-4 text-white">Projects Completed</div>
                             </div>
@@ -53,7 +53,7 @@
                         <div class="col-6 col-md-3"> 
                             <div class="counter-item"> 
                                 <div class="flex-item-center">
-                                    <div class="count-number heading4 text-white">15</div><span class="heading3 text-white">+</span>
+                                    <div class="count-number heading4 text-white">10</div><span class="heading3 text-white">+</span>
                                 </div>
                                 <div class="body1 mt-4 text-white">Working Countries</div>
                             </div>
@@ -106,49 +106,49 @@
         </div>
         <div class="section-solution bg-linear mt-80 pt-80 pb-80"> 
             <div class="container text-center">
-                <div class="text-label pt-4 pb-4 pl-12 pr-12 bg-green bora-2 display-inline-block">What we do</div>
+                <div class="text-label pt-4 pb-4 pl-12 pr-12 bg-green bora-2 display-inline-block rounded">What we do</div>
                 <div class="heading3 text-center mt-12">Our Services</div>
                 <div class="row row-gap-40 mt-40 sub-nav-solution">
                     <div class="col-12 col-xl-4 col-sm-6">
                         <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution1"><a href="{{ route('view.web.development') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('web-development.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">Web Development</div>
-                            <div class="service-desc text-on-surface-variant1 text-center mt-12">We are an IT company specializing in web development solutions, delivering innovative and customized websites to meet your business needs. Our expert team ensures top-notch design, functionality, and user experience, driving your online presence and success.</div></a>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">{!! strip_tags(\Illuminate\Support\Str::limit('We are an IT company specializing in web development solutions, delivering innovative and customized websites to meet your business needs. Our expert team ensures top-notch design, functionality, and user experience, driving your online presence and success.', 150, $end='...')) !!}</div></a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-4 col-sm-6">
                         <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution2"><a href="{{ route('view.mobile.app.development') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('app-development.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">App Development</div>
-                            <div class="service-desc text-on-surface-variant1 text-center mt-12">We turn your mobile app vision into reality. Our IT experts craft user-friendly, feature-rich apps for iOS and Android, helping your business flourish in today's mobile world.</div></a>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">{!! strip_tags(\Illuminate\Support\Str::limit("We turn your mobile app vision into reality. Our IT experts craft user-friendly, feature-rich apps for iOS and Android, helping your business flourish in today's mobile world.", 150, $end='...')) !!}</div></a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-4 col-sm-6">
                         <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution3"><a href="{{ route('view.software.development') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('software-development.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">Software Development</div>
-                            <div class="service-desc text-on-surface-variant1 text-center mt-12">Your IT needs, solved. We craft custom software solutions for businesses, from web and mobile apps to powerful back-end systems. We transform your ideas into reality, boosting efficiency and growth.</div></a>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">{!! strip_tags(\Illuminate\Support\Str::limit("Your IT needs, solved. We craft custom software solutions for businesses, from web and mobile apps to powerful back-end systems. We transform your ideas into reality, boosting efficiency and growth.", 150, $end='...')) !!}</div></a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-4 col-sm-6">
                         <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution4"><a href="{{ route('view.digital.marketing') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('digital-marketing.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">Digital Marketing</div>
-                            <div class="service-desc text-on-surface-variant1 text-center mt-12">Let us supercharge your IT brand online! We combine expert SEO strategies with digital marketing muscle to get your website seen by the right audience. Drive organic traffic and leads with our data-driven approach.</div></a>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">{!! strip_tags(\Illuminate\Support\Str::limit("Let us supercharge your IT brand online! We combine expert SEO strategies with digital marketing muscle to get your website seen by the right audience. Drive organic traffic and leads with our data-driven approach.", 150, $end='...')) !!}</div></a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-4 col-sm-6">
                         <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Services" data-item="solution5"><a href="{{ route('view.seo.services') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('seo.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">SEO</div>
-                            <div class="service-desc text-on-surface-variant1 text-center mt-12">We unlock your IT brand's online potential! Our SEO experts optimize your website for search engines, driving high-quality traffic and leads. Get found by the right customers and soar in search rankings.</div></a>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">{!! strip_tags(\Illuminate\Support\Str::limit("We unlock your IT brand's online potential! Our SEO experts optimize your website for search engines, driving high-quality traffic and leads. Get found by the right customers and soar in search rankings.", 150, $end='...')) !!}</div></a>
                         </div>
                     </div>
                     <div class="col-12 col-xl-4 col-sm-6">
                         <div class="solution-item service-item nav-item-main p-40 bora-20 bg-white h-100" data-cate="IT Solutions" data-item="solution5"><a href="{{ route('view.ui.ux.design') }}" class="main-item flex-column-item-center">
                             <img src="{{ asset('ui.png') }}" style="height: 70px">
                             <div class="service-name heading5 text-center mt-24">UI / UX Design</div>
-                            <div class="service-desc text-on-surface-variant1 text-center mt-12">We elevate your IT products! Our UI/UX design creates user-friendly interfaces and intuitive experiences. We craft beautiful, functional designs that drive engagement and success for your software.</div></a>
+                            <div class="service-desc text-on-surface-variant1 text-center mt-12">{!! strip_tags(\Illuminate\Support\Str::limit('We elevate your IT products! Our UI/UX design creates user-friendly interfaces and intuitive experiences. We craft beautiful, functional designs that drive engagement and success for your software.', 150, $end='...')) !!}</div></a>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
             <div class="container"> 
                 <div class="row gy-2 flex-between">
                     <div class="col-xl-8 col-md-9 col-12">
-                        <div class="text-label text-blue pt-4 pb-4 pl-12 pr-12 bg-grey bora-2 display-inline-block">What we do</div>
+                        <div class="text-label pt-4 pb-4 pl-12 pr-12 bg-green bora-2 display-inline-block rounded">What we do</div>
                         <div class="heading3 mt-12">Services that we are specialized in</div>
                     </div>
                     
@@ -303,20 +303,20 @@
                         <div class="container">
                             
                             <div class="heading text-center">
-                                <div class="text-label pt-4 pb-4 pl-12 pr-12 bg-green bora-2 display-inline-block">Our Blog</div>
-                                <div class="heading3 text-center mt-8">Recent Blogs</div>
+                                <div class="text-label pt-4 pb-4 pl-12 pr-12 bg-green bora-2 display-inline-block rounded">Our Blogs</div>
+                                <div class="heading3 text-center mt-8">Latest News & Articles</div>
                             </div>
                             <div class="list-blog-page pt-80 pb-80">
                                 <div class="container">
                                     <div class="row row-gap-40">
                                         @foreach ($blogs as $blog)
-                                        <div class="col-lg-4 col-sm-6 item">
-                                            <div class="blog-item blog-item-filter hover-box-shadow "><a class="main-item" href="{{ route('view.single.blog', $blog->slug) }}">
-                                                <div class="bg-img w-100 overflow-hidden"><img class="w-100 h-100 display-block" src="{{ asset('images/blog_images') }}/{{ $blog->cover_image }}"/></div>
-                                                <div class="infor mt-28">
-                                                    <div class="category text-button-small text-blue pt-4 pb-4 pl-12 pr-12 bg-grey bora-8 display-inline-block">Healthcare</div>
-                                                    <div class="title heading5 mt-12">{{ $blog->title }}</div>
-                                                    <div class="desc text-on-surface-variant1 mt-12">{!! strip_tags(\Illuminate\Support\Str::limit($blog->body, 150, $end='...')) !!}</div>
+                                        <div class="col-md-4 item">
+                                            <div class="blog-item blog-item-filter hover-box-shadow bg-linear bora-20 overflow-hidden h-100 "><a class="main-item" href="{{ route('view.single.blog', $blog->slug) }}">
+                                                <div class="bg-img w-100 overflow-hidden"><img class="w-100 h-100 display-block" src="{{ asset('images/blog_images') }}/{{ $blog->cover_image }}" alt="Unveiling the Impact: New SEO Strategies for Enhanced Online Visibility"/>
+                                                    <div class="category text-label bg-green text-black pt-8 pb-8 pl-12 pr-12 display-inline-block">{{ $blog->category->category_name }}</div>
+                                                </div>
+                                                <div class="infor p-28">
+                                                    <div class="title heading5">{{ $blog->title }}</div>
                                                     <div class="date text-label text-on-surface-variant1 mt-16">{{ $blog->created_at->format('d F, Y') }}</div>
                                                 </div></a>
                                             </div>
@@ -331,7 +331,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section-contact bg-linear-grey pt-60 pb-20">
+                    
+                    
+                    
+                    {{-- <div class="section-contact bg-linear-grey pt-60 pb-20">
                         <div class="container"> 
                             <div class="row flex-between row-gap-40">
                                 <div class="col-12 col-xl-7 text-white">
@@ -384,7 +387,7 @@
                                                 <label class="caption1 text-on-surface-variant1 pb-8" for="company">Company/ Organization</label>
                                                 <input class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline" type="text" id="company" placeholder=""/>
                                             </div>
-                                           
+                                            
                                             <div class="col-12"> 
                                                 <label class="caption1 text-on-surface-variant1 pb-8" for="message">Your message</label>
                                                 <textarea class="w-100 bg-white pl-16 pr-16 pt-8 pb-8 bora-4 border-outline display-block" name="message" rows="3" id="message" placeholder=""></textarea>
@@ -397,6 +400,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
-                @endsection
+            </div>
+        </div>
+    </div>
+    
+    @endsection

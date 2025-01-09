@@ -3,9 +3,9 @@
 @section('main-body')
 <div class="page-content-wrapper p-xxl-4">
     <div class="row">
-        <div class="col-12 mb-4 mb-sm-5">
+        <div class="col-12 mb-4">
             <div class="d-sm-flex justify-content-between align-items-center">
-                <h1 class="h3 mb-3 mb-sm-0">Publish New Blog</h1>
+                <h1 class="h4 mb-3 mb-sm-0"><i class="fa fa-plus me-2"></i>Publish New Blog</h1>
             </div>
         </div>
     </div>
@@ -16,12 +16,22 @@
                 <div class="card shadow">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-12 col-sm-12">
+                            <div class="col-lg-8 col-sm-12">
                                 <div class="mb-3">
                                     <label class="form-label" for="product-price-input">Title</label>
                                     <div class="input-group mb-3">
                                         <input type="text" class="form-control" placeholder="Enter Blog Title" name="title" required>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="mb-3">
+                                    <label class="form-label" for="product-price-input">Category</label>
+                                    <select class="form-select" name="blog_category_id">
+                                        @foreach ($categories as $category)
+                                            <option value="{{ $category->id }}">{{ $category->category_name }}</option>
+                                        @endforeach
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-lg-12 col-sm-12">

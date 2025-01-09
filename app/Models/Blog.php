@@ -17,9 +17,13 @@ class Blog extends Model
         'slug',
         'likes',
         'views',
+        'blog_category_id'
     ];
 
     public function author(){
         return $this->belongsTo(User::class, 'posted_by', 'id');
+    }
+    public function category(){
+        return $this->belongsTo(BlogCategory::class, 'blog_category_id', 'id');
     }
 }
